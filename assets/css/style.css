@@ -250,7 +250,7 @@ figure {
 .home-3-secondary-dark-bg, .home-3 .client-logo-slider-area, .how-it-works-area-3{
     background-color: #1c1f27;
 }
-.home-3-pink-bg, .home-3 #scroll, .works-dash-line span{
+.home-3-pink-bg, .works-dash-line span{
     background: #ff1d8d;
 }
 .home-3-font-color, .home-3 .play-button, .app-screenshots-slider-area-3 .screenshots_slide_nav .flaticon-right-arrow:hover::before, .app-screenshots-slider-area-3 .screenshots_slide_nav .flaticon-left-arrow:hover::before,
@@ -291,7 +291,7 @@ figure {
 {
     color: #fb238e;
 }
-.home-5-secondary-bg-color, .home-5 .theme-button, .home-5 .theme-button::after , .home-5 .theme-button::before, .home-5 #mainNav .navbar-nav .nav-item .nav-link.active::before,
+.home-5-secondary-bg-color, .home-5 #mainNav .navbar-nav .nav-item .nav-link.active::before,
 .home-5 .reviews_slide_nav .testi_prev:hover, .home-5 .reviews_slide_nav .testi_next:hover, .faq-area.faq-area-3 #accordion6 .panel-title::before{
     background: #fb238e;
 }
@@ -322,10 +322,10 @@ figure {
 .font-semi-bold, .review-comment-box h5, .review-comment-box h6, .home-5 .hero-area-content h1 > span, .widget-recent-posts ul li a p > span, .widget ul li a {
     font-weight: 500;
 }
-.font-bold, .breadcrumb li.breadcrumb-item, .widget-recent-posts ul li a p{
+.font-bold, .breadcrumb li.breadcrumb-item, .widget-recent-posts ul li a p, .contact-form-wrapper .theme-button .contact-btn{
      font-weight: 700;
  }
-.font-18, .review-comment-box h5, h5.small-heading, .contact-form-wrapper .theme-button .contact-btn, .blog-content-with-media-title{
+.font-18, .review-comment-box h5, h5.small-heading, .blog-content-with-media-title{
     font-size: 18px;
 }
 .font-14, .review-comment-box h6, .widget-search .form-inline > button > i, .widget-recent-posts ul li a p > span{
@@ -628,12 +628,12 @@ button:focus {
     cursor: pointer;
     width: 50px;
     height: 50px;
-    background-color: #3498db;
+    /*background-color: #3498db;*/
     text-indent: -9999px;
     display: none;
     z-index: 10;
+    background: linear-gradient(-150deg, #74d7f8, #2ca6ef);
 }
-
 #scroll span {
     position: absolute;
     top: 50%;
@@ -647,7 +647,7 @@ button:focus {
 }
 
 #scroll:hover {
-    background-color: rgba(44,166,239,1);
+    /*background-color: rgba(44,166,239,1);*/
 }
 /*-------------------------------------------
             5. Scroll To Top Area End
@@ -833,6 +833,8 @@ button:focus {
 .video-wrapper img {
     border-radius: 32px;
     width: 100%;
+    -webkit-box-shadow: 13px 16px 27px 4px rgba(0,0,0,.18);
+    box-shadow: 13px 16px 27px 4px rgba(0,0,0,.18);
 }
 .play-button {
     color: #4dbcf3;
@@ -1374,7 +1376,7 @@ button:focus {
     15. Home Blog Posts Area Start
 -------------------------------------------*/
 .all-blog-posts-area {
-    padding: 100px 0 70px;
+    padding: 100px 0;
 }
 .all-blog-posts-area .section-title-area {
     text-align: center;
@@ -2273,13 +2275,16 @@ header.page-banner-area .header-caption-heading {
        Home Version 3 Page CSS Start
 -------------------------------------------*/
 /*------Home 3 Default CSS-----*/
-.home-3 .theme-button::before, .contact-area-3 .subm-btn input.theme-button::before {
+.home-3 .theme-button::before, .contact-area-3 .subm-btn input.theme-button::before{
     background: linear-gradient(-150deg, #ff1d8d ,#8e26f9);
 }
-.home-3 .theme-button::after, .contact-area-3 .subm-btn input.theme-button::after  {
+.home-3 .theme-button::after, .contact-area-3 .subm-btn input.theme-button::after{
     background: linear-gradient(-150deg ,#8e26f9, #ff1d8d);
 }
-.home-3 h2.section-heading > span{
+.home-3 #scroll{
+    background: linear-gradient(-150deg, #ff1d8d ,#8e26f9);
+  }
+  .home-3 h2.section-heading > span{
     display: block;
 }
 h5.small-heading {
@@ -2571,21 +2576,25 @@ h5.small-heading span {
 -------------------------------------------*/
 /*-------Home Version 4 Theme Button CSS-------*/
 .home-4 .theme-button::before {
-    background: #fe9f9f;
+    /*background: #fe9f9f;*/
+    background: linear-gradient(-150deg, #f6cdbd, #fe9f9f);
 }
-.home-4 .theme-button , .home-4 #mainNav .navbar-nav .nav-item:last-child .nav-link:hover{
+.home-4 .theme-button::after {
+     background: linear-gradient(-150deg, #fe9f9f, #f6cdbd);
+}
+.home-4 .theme-button, .home-4 .contact-form-wrapper .theme-button .contact-btn{
     color: #42454f !important;
 }
-.home-4 #mainNav ul li.nav-item:last-child a.nav-link::before, .home-4 #mainNav ul li.nav-item:last-child a.nav-link::after {
+.home-4 #mainNav ul li.nav-item:last-child a.nav-link.theme-button::before, .home-4 #mainNav ul li.nav-item:last-child a.nav-link.theme-button::after,
+.home-4 #mainNav ul li.nav-item:last-child a.nav-link.theme-button:hover{
     background: #fbe3e3;
     color: #42454f !important;
 }
-.home-4 #mainNav.navbar-shrink ul li.nav-item:last-child a.nav-link::before, .home-4 #mainNav.navbar-shrink ul li.nav-item:last-child a.nav-link::after, .home-4 .subm-btn input.theme-button{
+.home-4 #mainNav.navbar-shrink ul li.nav-item:last-child a.nav-link.theme-button::before, .home-4 #mainNav.navbar-shrink ul li.nav-item:last-child a.nav-link.theme-button::after,
+.home-4 #mainNav.navbar-shrink ul li.nav-item:last-child a.nav-link.theme-button.active{
     background: #fe9f9f;
+    color: #fff !important;
 }
-/* {*/
-/*    background: linear-gradient(-150deg, #776ec7, #2b227f);*/
-/*}*/
 .home-4 #mainNav .navbar-nav .nav-item .nav-link:hover, .home-4 #mainNav .navbar-nav .nav-item .nav-link.active {
     color: #fff !important;
 }
@@ -2612,6 +2621,12 @@ h5.small-heading span {
     background: #fbe3e3;
     color: #42454f !important;
     margin-left: 0;
+    border: 1px solid #fbe3e3;
+}
+.home-4 .hero-button-box .theme-button:first-child:hover, .home-4 .hero-button-box .theme-button:last-child:hover {
+    background: #fe9f9f;
+    /*border: 1px solid #fbe3e3;*/
+    color: #42454f !important;
 }
 /*------About Area CSS------*/
 .home-4 .about-area {
