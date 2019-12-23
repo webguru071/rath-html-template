@@ -229,13 +229,13 @@ figure {
 .home-2-primary-color, .home-2 .play-button, .home-2 .screenshots_slide_nav .flaticon-right-arrow:hover::before, .home-2 .screenshots_slide_nav .flaticon-left-arrow:hover::before {
     color: #49409b;
 }
-.home-2-primary-bg-color, .home-2 #scroll{
+.home-2-primary-bg-color, .home-2 #mainNav .navbar-nav .dropdown-menu a:hover, .home-2 #scroll{
     background: #49409b;
 }
 .home-2-secondary-color, .home-2 .copyright-text p a, .home-5 .copyright-text p a, .home-5 .copyright-text p a:hover, .home-5 .terms-policy ul li a:hover{
     color: #e91fa2;
 }
-.home-2-secondary-bg-color, .home-2 #mainNav .navbar-nav ul.dropdown-menu li, .home-5 .subm-btn input.theme-button, h5.small-heading span{
+.home-2-secondary-bg-color, .home-5 .subm-btn input.theme-button, h5.small-heading span{
     background: #e91fa2;
 }
 
@@ -270,7 +270,7 @@ figure {
 .home-4-font-color, .home-4 h1, .home-4 h2, .home-4 h3, .home-4 h4, .home-4 h5, .home-4 h6, .home-4 .hero-area-content h1, .home-4 .hero-area-content p{
     color: #42454f!important;
 }
-.home-4-bg-color, .home-4 .screenshots-slider-wrapper .owl-dot.active, .home-4 .reviews-slider-wrapper-4 .owl-dot.active,
+.home-4-bg-color, .home-4 #mainNav .navbar-nav .dropdown-menu a:hover, .home-4 .screenshots-slider-wrapper .owl-dot.active, .home-4 .reviews-slider-wrapper-4 .owl-dot.active,
 .reviews_slide_nav_4 .testi_prev:hover, .reviews_slide_nav_4 .testi_next:hover, .home-4 #scroll{
     background-color: #fe9f9f!important;
 }
@@ -284,7 +284,7 @@ figure {
 .home-5-primary-color, .home-5 #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover, .home-5 #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link.active, .home-5 .play-button{
     color: #522ac5!important;
 }
-.home-5-primary-bg-color, .home-5 .single-review-slide-box, .home-5 .contact-form-area{
+.home-5-primary-bg-color, .home-5 #mainNav .navbar-nav .dropdown-menu a:hover, .home-5 .single-review-slide-box, .home-5 .contact-form-area{
     background-color: #522ac5;
 }
 .home-5-secondary-color, .home-5 .review-content h2, .home-5 .contact-address ul li:nth-child(1) span i, .home-5 .contact-address ul li:nth-child(2) span i, .home-5 .contact-address ul li:nth-child(3) span i
@@ -546,18 +546,18 @@ button:focus {
     top: 2px;
 }
 #mainNav .navbar-nav ul.dropdown-menu {
-    background-color: transparent;
-    padding: 15px 0 0 0;
+    background-color: #2c303a;
+    padding: 15px 0 15px 0;
     width: 230px;
     border: none;
 }
   #mainNav .navbar-nav ul.dropdown-menu li {
-      background-color: #321d9a;
+      background-color: #2c303a;
   }
   #mainNav .navbar-nav .dropdown-menu a {
       color: #fff;
       padding: 8px 10px 8px 12px;
-      border-top: 1px solid #2f2da5;
+      border-top: 1px solid #343c50;
       display: flex;
   }
   #mainNav .navbar-nav .dropdown-menu a:hover {
@@ -1252,7 +1252,7 @@ button:focus {
     background-color: #dee7ec;
     border: 0;
     border-radius: 25px;
-    padding: 10px 10px 10px 20px;
+    padding: 10px 10px 13px 20px;
 }
 .subscribe-form-part .form-inline {
     position: relative;
@@ -1392,6 +1392,9 @@ button:focus {
     box-shadow: 0px 0px 10px 0px #ddd;
     background-color: #fff;
     margin-bottom: 30px;
+}
+.single-blog-post img {
+    max-height: 300px;
 }
 .single-blog-content {
     padding: 30px;
@@ -1750,7 +1753,7 @@ header.page-banner-area .header-caption-heading {
     background-color: transparent;
     left: 10%;
     top: 24%;
-    border: 7px solid #7086f8;
+    border: 7px solid #2ca6ef;
     z-index: -1;
 }
 #content blockquote {
@@ -1759,7 +1762,7 @@ header.page-banner-area .header-caption-heading {
 }
 #content .block-1 blockquote p {
     margin-bottom: 0;
-    border-left: 5px solid #7086f8;
+    border-left: 5px solid #2ca6ef;
     padding-left: 14px;
     font-style: italic;
 }
@@ -1981,7 +1984,7 @@ header.page-banner-area .header-caption-heading {
     color: #e91fa2 !important;
 }
 .home-2 #mainNav .navbar-nav .dropdown-menu a:hover{
-    background-color: #39318d;
+    /*background-color: #39318d;*/
 }
 .home-2 #mainNav .navbar-nav .nav-item:last-child .nav-link:hover, .home-5 .hero-area-content p {
     color: #fff !important;
@@ -2307,6 +2310,11 @@ h5.small-heading span {
 .home-3 #mainNav.navbar-shrink {
     background: #2c303a;
 }
+.home-3 #mainNav .navbar-nav .dropdown-menu a:hover{
+    background-color: #8e26f9;
+    /*background-color: linear-gradient(-150deg, #ff1d8d ,#8e26f9);*/
+}
+
 /*------Hero Area CSS-----*/
 .home-banner-area-3 {
     background-image: none;
@@ -2318,6 +2326,9 @@ h5.small-heading span {
 .home-banner-area-3 .hero-area-content h1 > span {
     font-weight: 300;
     display: block;
+}
+.home-banner-area-3 .hero-button-box a:last-child {
+    margin-left: 10px;
 }
 /*------Client Logo Area-----*/
 .home-3 .client-logo-slider-area {
@@ -2763,6 +2774,9 @@ h5.small-heading span {
     text-transform: uppercase;
     display: block;
 }
+.home-5 p.section-subheading {
+    margin: 31px 0 50px;
+}
 .home-4 .all-section-after::after, .home-4 .about-area::after, .home-4 .subscribe-area::after, .home-4 .reviews-area::after, .home-4 .contact-area::after, .home-4 #features::after,
 .home-5 .all-section-after::after, .home-5 .about-area::after, .home-5 .subscribe-area::after, .home-5 .reviews-area::after, .home-5 .contact-area::after, .home-5 #features::after,
 .home-3 .all-section-after::after, .home-3 .about-area::after, .home-3 .subscribe-area::after, .home-3 .reviews-area::after, .home-3 .contact-area::after, .home-3 #features::after {
@@ -2801,20 +2815,28 @@ h5.small-heading span {
 .home-5 .theme-button, .home-5 .theme-button::after , .home-5 .theme-button::before {
     border-radius: 0;
 }
+.home-5 .theme-button::before{
+    background: linear-gradient(-150deg, #f856a6, #fb238e);
+}
+.home-5 .theme-button::after{
+    background: linear-gradient(-150deg, #fb238e, #f856a6);
+}
+.home-5 .subm-btn input {
+    padding: 10px 33px 13px;
+}
 
 /*------ Menu Area CSS -------*/
 .home-5 #mainNav .navbar-nav .nav-item .nav-link {
-    font-size: 17px;
     position: relative;
     padding: 0.75em 12px;
 }
 .home-5 #mainNav ul li.nav-item:last-child a.nav-link {
-    padding: 7px 30px 10px;
+    padding: 8px 30px 12px;
 }
 .home-5 #mainNav .navbar-nav .nav-item .nav-link:hover, .home-5 #mainNav .navbar-nav .nav-item .nav-link.active {
     color: #fff !important;
 }
-.home-5 #mainNav .navbar-nav .nav-item .nav-link::before {
+.home-5 #mainNav .navbar-nav .nav-item:not(:last-child) .nav-link::before {
     content: "";
     height: 3px;
     width: 80%;
@@ -2825,7 +2847,7 @@ h5.small-heading span {
     border-radius: 15px;
     opacity: 0;
 }
-.home-5 #mainNav .navbar-nav .nav-item .nav-link.active::before {
+.home-5 #mainNav .navbar-nav .nav-item:not(:last-child) .nav-link.active::before {
     opacity: 1;
 }
 /*------ Hero Area CSS -------*/
@@ -2861,6 +2883,9 @@ h5.small-heading span {
     padding-bottom: 215px;
 }
 /*---- About Area CSS -----*/
+.home-5 .about-area .about-right-side .section-bubble-effect {
+    left: 0%;
+}
 .home-5 .about-wrapper {
     margin: 0 0;
 }
@@ -2994,7 +3019,7 @@ h5.small-heading span {
     box-shadow: 0px 0px 0px 6px rgba(82,42,197,.2);
 }
 .home-5 #scroll {
-    background-color: #522ac5;
+    background: linear-gradient(-150deg, #774cf2, #522ac5);
 }
 /*---- Features Area -----*/
 .home-5 #accordion6 .panel-title a > i::before, .home-5 #accordion6 .panel:nth-child(2) .panel-title a > i::before, .home-5 #accordion6 .panel:nth-child(3) .panel-title a > i::before {
