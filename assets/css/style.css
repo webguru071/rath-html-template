@@ -219,17 +219,19 @@ figure {
 .pagination-area li .page-link:hover{
     color: #2ca6ef;
 }
-.bg-deep-blue, .mean-container .mean-nav ul li{
+.bg-deep-blue{
     background: #321d9a;
 }
 .color-deep-blue, .home-banner-area-2 .hero-button-box .theme-button:first-child:hover, .home-banner-area-2 .hero-button-box .theme-button:last-child:hover{
     color: #321d9a!important;
 }
 /*----- Home Version 2 Bg/Color CSS -----*/
-.home-2-primary-color, .home-2 .play-button, .home-2 .screenshots_slide_nav .flaticon-right-arrow:hover::before, .home-2 .screenshots_slide_nav .flaticon-left-arrow:hover::before {
+.home-2-primary-color, .home-2 .play-button, .home-2 .screenshots_slide_nav .flaticon-right-arrow:hover::before, .home-2 .screenshots_slide_nav .flaticon-left-arrow:hover::before,
+.home-2.mean-container a.meanmenu-reveal{
     color: #49409b;
 }
-.home-2-primary-bg-color, .home-2 #mainNav .navbar-nav .dropdown-menu a:hover, .home-2 #scroll{
+.home-2-primary-bg-color, .home-2 #mainNav .navbar-nav .dropdown-menu a:hover, .home-2 #scroll, .home-2.mean-container a.meanmenu-reveal span,
+.home-2.mean-container .mean-nav ul li a:hover{
     background: #49409b;
 }
 .home-2-secondary-color, .home-2 .copyright-text p a, .home-5 .copyright-text p a, .home-5 .copyright-text p a:hover, .home-5 .terms-policy ul li a:hover{
@@ -250,10 +252,13 @@ figure {
 .home-3-secondary-dark-bg, .home-3 .client-logo-slider-area, .how-it-works-area-3{
     background-color: #1c1f27;
 }
-.home-3-pink-bg, .works-dash-line span{
+.home-3-pink-bg, .works-dash-line span, .home-3.mean-container a.meanmenu-reveal span, .home-3.mean-container .mean-nav ul li a:hover{
     background: #ff1d8d;
 }
-.home-3-font-color, .home-3 .play-button, .app-screenshots-slider-area-3 .screenshots_slide_nav .flaticon-right-arrow:hover::before, .app-screenshots-slider-area-3 .screenshots_slide_nav .flaticon-left-arrow:hover::before,
+.home-3.mean-container .mean-nav ul li a:hover{
+    background: #8e26f9;
+}
+.home-3-font-color, .home-3.mean-container a.meanmenu-reveal, .home-3 .play-button, .app-screenshots-slider-area-3 .screenshots_slide_nav .flaticon-right-arrow:hover::before, .app-screenshots-slider-area-3 .screenshots_slide_nav .flaticon-left-arrow:hover::before,
 .reviews-slider-3 .review-content span i::before, .reviews-slider-3 .review-content h2, .contact-area-3 .contact-address ul li:nth-child(1) span i, .contact-area-3 .contact-address ul li:nth-child(2) span i, .contact-area-3 .contact-address ul li:nth-child(3) span i,
 .home-3 .copyright-text p a, .home-3 .copyright-text p a:hover, .home-3 .terms-policy ul li a:hover, .about-area-3.home-3-about-2 .counter-area p i, .home-3 #mainNav .navbar-nav .nav-item .nav-link:hover, .home-3 #mainNav .navbar-nav .nav-item .nav-link.active {
     color: #ff1d8d!important;
@@ -547,7 +552,7 @@ button:focus {
 }
 #mainNav .navbar-nav ul.dropdown-menu {
     background-color: #2c303a;
-    padding: 15px 0 15px 0;
+    /*padding: 15px 0 15px 0;*/
     width: 230px;
     border: none;
 }
@@ -568,7 +573,13 @@ button:focus {
 }
  /* Mean Menu / Mobile Menu Style */
 .mean-container .mean-nav ul li a:hover {
-    background: rgba(44, 166, 239, .5);
+    background: #2ca6ef;
+}
+.mean-container .mean-nav ul li.dropdown.active a.nav-link.js-scroll-trigger:not a:hover{
+    background: red;
+}
+.mean-container .mean-nav ul li.dropdown.active a.nav-link.js-scroll-trigger{
+
 }
 .mean-container .mean-bar {
     background-color: #fff;
@@ -580,23 +591,29 @@ button:focus {
     height: 100%;
 }
 .mean-container .mean-nav ul li a.mean-expand {
-    padding: 7px 18px 12px 0 !important;
+    padding: 0 !important;
     margin-top: 3px;
-    top: -3px;
-    height: 28px;
+    top: -2px;
+    background: rgba(255,255,255,.1);
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .mobile-logo {
     position: relative;
-    top: 6px;
+    top: 0;
     left: 16px;
-    height: 38px;
+    height: 53px;
 }
 .mean-container a.meanmenu-reveal {
     top: 5px;
 }
   .mean-container .mean-nav ul {
-      margin: 14px 0 0 0;
-      background-color: transparent;
+      margin: 1px 0 0 0;
+      background-color: #2c303a;
   }
   .mean-container .mean-nav ul li a{
   }
@@ -611,7 +628,7 @@ button:focus {
     border-top: 1px solid rgba(0, 0, 0, .4);
 }
 .mean-container .mean-nav ul li.mean-last a {
-    width: 30%;
+    width: 94px;
     text-align: center;
     padding: 12px 20px;
     margin: 10px 0 10px 15px;
@@ -1503,7 +1520,7 @@ button:focus {
     /*background: linear-gradient(-150deg, #74d7f8, #2ca6ef);*/
 }
 .subm-btn input {
-    padding: 10px 40px 14px;
+    /*padding: 10px 40px 14px;*/
 }
 .sending-gif img {
     height: 50px;
@@ -1513,7 +1530,7 @@ button:focus {
     margin-top: 30px;
 }
 .contact-form-wrapper .theme-button {
-    padding: 0;
+    padding: 10px 40px 14px;
     /*margin-top: 15px;*/
     font-weight: 600;
 }
@@ -2031,6 +2048,7 @@ header.page-banner-area .header-caption-heading {
 .home-banner-area-2 .hero-button-box .theme-button:first-child, .home-banner-area-2 .hero-button-box .theme-button:last-child{
     background: #f2f6fb;
     color: #3b328e !important;
+    box-shadow: 0px 3px 9px 4px rgba(64,55,147,.2);
 }
 .home-banner-area-2 .hero-button-box .theme-button:first-child:hover, .home-banner-area-2 .hero-button-box .theme-button:last-child:hover{
     color: #e91fa2 !important;
@@ -2137,6 +2155,7 @@ header.page-banner-area .header-caption-heading {
 .home-2 .features-1-area .background-corner-bg-img {
     right: 91%;
     bottom: 10%;
+    z-index: -1;
 }
 .home-2 .features-2-area .features-1-all-box {
     align-items: flex-start;
@@ -2188,15 +2207,17 @@ header.page-banner-area .header-caption-heading {
 .review-from-client-slider .nav-tabs .nav-link.active img {
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
+    border: 2px solid #3b328e;
 }
 .review-from-client-slider .nav-tabs .nav-link img{
+    border: 2px solid transparent;
+    border-radius: 50%;
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
+    transition: .7s;
 }
 .review-from-client-slider .nav-tabs .nav-link.active {
     background-color: transparent;
-    border: 2px solid #3b328e;
-    border-radius: 50%;
 }
 /*Nav Tab/ review Tab Image Left Side---------*/
 .review-from-client-slider .nav-tabs a.nav-link:nth-child(1), .review-from-client-slider .nav-tabs a.nav-link:nth-child(2), .review-from-client-slider .nav-tabs a.nav-link:nth-child(3){
@@ -3130,12 +3151,14 @@ h5.small-heading span {
     .app-screenshots-slider-area .owl-item.active.center .item {
         background-size: contain;
         transform: scale(.8);
+        padding: 5px 17px;
     }
     .app-screenshots-slider-area .owl-item.active.center .item .screenshots-box {
         margin: 0 0;
+        padding: 27px 18px 29px 15px;
     }
     .app-screenshots-slider-area .owl-item.active.center .item img {
-        height: 500px;
+        height: 408px;
     }
     .app-screenshots-slider-area .section-title-area {
         margin: 0 13%;
@@ -3165,6 +3188,21 @@ h5.small-heading span {
     .subscribe-form-part .theme-button {
         padding: 11px 45px 15px;
     }
+    .background-shape {
+        overflow: hidden;
+    }
+    .review-from-client-slider .nav-tabs a.nav-link:nth-child(3) {
+        left: 250px;
+        /*top: 120px;*/
+    }
+    .review-from-client-slider .nav-tabs a.nav-link:nth-child(4) {
+        right: 250px;
+        /*top: 122px;*/
+    }
+    /*============= Home 3 Responsive CSS ==============*/
+    .reviews_slide_nav_4 .testi_prev, .reviews_slide_nav_4 .testi_next {
+        top: 40%;
+    }
 
 }
 
@@ -3178,6 +3216,19 @@ h5.small-heading span {
       .app-screenshots-slider-area .testi_next {
           right: 12%;
       }
+      .review-from-client-slider .nav-tabs a.nav-link:nth-child(4) {
+          right: 240px;
+          /*top: 122px;*/
+      }
+      .review-from-client-slider .nav-tabs a.nav-link:nth-child(3) {
+          left: 240px;
+          /*top: 120px;*/
+      }
+      /*============= Home 3 Responsive CSS ==============*/
+      .reviews_slide_nav_4 .testi_prev, .reviews_slide_nav_4 .testi_next {
+          top: 40%;
+      }
+
   }
 
 /*--------Min 1200px Width Screen--------*/
@@ -3204,17 +3255,23 @@ h5.small-heading span {
       .mobile_menu{
           display: none!important;
       }
+      /*#mainNav .navbar-nav .nav-item .nav-link {*/
+      /*    padding: 3px 10px 6px;*/
+      /*}*/
+      /*#mainNav ul li.nav-item:last-child a.nav-link {*/
+      /*    padding: 3px 14px 6px;*/
+      /*}*/
+      /*#mainNav .navbar-nav .nav-item .nav-link::after {*/
+      /*    bottom: -6px;*/
+      /*}*/
+      #mainNav .navbar-nav ul.dropdown-menu {
+          /*padding: 26px 0 0 0;*/
+      }
       #mainNav .navbar-nav .nav-item .nav-link {
-          padding: 3px 10px 6px;
+          font-size: 15px;
       }
       #mainNav ul li.nav-item:last-child a.nav-link {
-          padding: 3px 14px 6px;
-      }
-      #mainNav .navbar-nav .nav-item .nav-link::after {
-          bottom: -6px;
-      }
-      #mainNav .navbar-nav ul.dropdown-menu {
-          padding: 26px 0 0 0;
+          padding: 8px 30px 12px;
       }
       .app-screenshots-slider-area .testi_next {
           right: 11%;
@@ -3285,7 +3342,28 @@ h5.small-heading span {
           border-radius: 29px;
           height: 513px;
       }
+      .home-2 .single-features-1-img::after {
+          left: -125px;
+      }
+      .home-2 .features-1-all-box .single-features-1-box:nth-child(2) .single-features-1-img::after {
+          left: -60px;
+      }
 
+      /*------- Home 5 Responsive CSS --------*/
+      .home-5 #mainNav ul li.nav-item:nth-child(3) {
+          display: none;
+      }
+
+      /*============= Home 3 Responsive CSS ==============*/
+      .reviews_slide_nav_4 .testi_prev, .reviews_slide_nav_4 .testi_next {
+          top: 40%;
+      }
+      .reviews_slide_nav_4 .testi_prev {
+          right: 93%;
+      }
+      .reviews_slide_nav_4 .testi_next {
+          right: 0%;
+      }
   }
 
 /*======================================
@@ -3316,6 +3394,43 @@ h5.small-heading span {
       .free-download-mobile-mockup img {
           height: 390px;
       }
+      /*-------- Home 2 Review Area ------- CSS*/
+      .review-comment-box {
+          width: 60%;
+      }
+      .review-img-box {
+          flex-direction: column;
+      }
+      .review-from-client-slider .nav-tabs a.nav-link:nth-child(1) {
+          left: 112px;
+          /*bottom: 48px;*/
+      }
+      .review-from-client-slider .nav-tabs a.nav-link:nth-child(2) {
+          left: 20px;
+          /*top: 260px;*/
+      }
+      .review-from-client-slider .nav-tabs a.nav-link:nth-child(3) {
+          left: 62px;
+          /*top: 120px;*/
+      }
+      .review-from-client-slider .nav-tabs a.nav-link:nth-child(4) {
+          right: 75px;
+          /*top: 122px;*/
+      }
+      .review-from-client-slider .nav-tabs a.nav-link:nth-child(5) {
+          right: 0;
+          /*top: 223px;*/
+      }
+      .review-from-client-slider .nav-tabs a.nav-link:nth-child(6) {
+          right: 100px;
+          /*bottom: 30px;*/
+      }
+      .review-content {
+          text-align: center;
+          margin-left: 0;
+          margin-top: 10px;
+      }
+
   }
 
   @media only screen and (max-width: 991px) {
@@ -3422,7 +3537,7 @@ h5.small-heading span {
           top: 6px;
       }
       .subscribe-form-part .theme-button {
-          padding: 10px 17px 15px;
+          padding: 11px 20px 15px;
       }
       h2.section-heading {
           font-size: 27px;
@@ -3492,6 +3607,45 @@ h5.small-heading span {
       .app-screenshots-slider-area .section-title-area {
           margin: 25px 2%;
       }
+      /*========= Home 2 Responsive CSS ==========*/
+      /*----- Hero Area CSS----- */
+      .home-2 .hero-right-bg img {
+          height: 480px;
+          border-radius: 40px;
+      }
+      .home-2 .home-banner-area-2 .hero-right-top-frame {
+          bottom: 11px;
+          left: 11px;
+      }
+      .home-2 .home-banner-area-2 .hero-right-top-frame img {
+          height: 460px;
+          border-radius: 18px;
+      }
+      .home-2 .about-left-side > img.home-2-about-base-img {
+          height: 350px;
+      }
+      .home-2 .about-left-side::before {
+          /*height: 407px;*/
+          width: 274px;
+          /*right: -7px;*/
+          top: -87px;
+      }
+      .home-2 .home-2-about-float-img {
+          /*position: relative;*/
+          /*top: -213px;*/
+          /*right: -15px;*/
+          height: 190px;
+      }
+      .home-2 .single-features-1-img::after {
+          left: -97px;
+      }
+      .home-2 .features-1-all-box .single-features-1-box:nth-child(2) .single-features-1-img::after {
+          left: -30px;
+      }
+      .video-area p {
+          font-size: 18px;
+      }
+
   }
   @media only screen and  (max-width: 991px){
     .app-screenshots-slider-area .testi_next {
@@ -3509,13 +3663,100 @@ h5.small-heading span {
         /*padding: 5px 0;*/
     }
     .app-screenshots-slider-area .owl-item.active.center .item .screenshots-box {
-        margin: 0 2%;
-        /*padding: 20px 10px 0;*/
+        margin: 3% 2%;
+        padding: 27px 18px 7px 15px;
     }
-    .app-screenshots-slider-area .owl-item.active.center .item img {
-        height: 570px;
-        padding: 11px 8px 4px;
-    }
+      .app-screenshots-slider-area .item img {
+          /*height: 440px;*/
+          width: auto;
+      }
+      .app-screenshots-slider-area .owl-item.active.center .item img {
+          height: 507px;
+          padding: 3px 1px 4px;
+          width: 242px;
+          margin: 0 auto;
+      }
+      /*===========Home 3 Responsive CSS==========*/
+      #home-3-about-2 {
+          padding: 50px 0 80px;
+      }
+      .about-area-3 .about-wrapper {
+          justify-content: space-between;
+      }
+      .about-area-3 .counter-box {
+          margin: 0 20px 0 0;
+      }
+      .about-area-3 .count-content {
+          width: 110px;
+          height: 110px;
+          margin: 0 15px 0 0;
+      }
+      .how-it-works-area-3 .how-it-works-box {
+          width: 30%;
+      }
+      .how-it-works-area-3 .how-it-works-box h3 {
+          font-weight: 400;
+          font-size: 21px;
+      }
+      .how-it-works-area-3 .how-it-works-box i::before {
+          font-size: 42px;
+      }
+      .how-it-works-area-3 .how-works-img {
+          width: 80px;
+          height: 80px;
+      }
+      .works-dash-line {
+          right: -77%;
+          top: 11%;
+      }
+      .reviews-slider-4 .review-content p, .reviews-slider-3 .review-content p {
+          font-size: 16px;
+      }
+      .reviews-slider-4 .review-content h2 {
+          font-size: 16px;
+      }
+      .reviews_slide_nav_4 .testi_prev, .reviews_slide_nav_4 .testi_next {
+          top: 40%;
+      }
+      .reviews_slide_nav_4 .testi_prev {
+          right: 97%;
+      }
+      .team-member-box img {
+          max-height: 157px;
+      }
+      .contact-area-3 .contact-form-address-wrapper {
+          padding: 65px 15px 0;
+      }
+      .contact-area-3 .contact-form-wrapper {
+          padding: 0 45px 70px;
+      }
+      .team-content h4 {
+          font-size: 16px;
+      }
+      .team-content h6 {
+          font-size: 13px;
+      }
+      .contact-form-wrapper .theme-button {
+          padding: 7px 27px 11px;
+      }
+      /*--------About Area CSS--------*/
+      .home-3 .hero-area-content {
+          width: 50%;
+      }
+      .home-3 .hero-right-wrapper {
+          width: 40%;
+      }
+       .home-3 .hero-right-bg img {
+          height: 270px;
+      }
+      .home-3 .home-banner-area-3 .hero-right-top-frame {
+          bottom: -50px;
+          left: -30px;
+      }
+      .home-3 .home-banner-area-2 .hero-right-top-frame img {
+          height: 380px;
+      }
+
 
 }
 
@@ -3524,10 +3765,13 @@ h5.small-heading span {
     #mainNav {
         display: none !important;
     }
-    .app-screenshots-slider-area .owl-item.active.center .item img {
-        height: 474px;
-        padding: 7px 3px 4px;
+    .app-screenshots-slider-area .item img {
+        height: 440px;
     }
+    /*.app-screenshots-slider-area .owl-item.active.center .item img {*/
+    /*    height: 440px;*/
+    /*    padding: 6px 5px 4px;*/
+    /*}*/
 
 }
 
@@ -3635,6 +3879,9 @@ h5.small-heading span {
           width: 100%;
           float: none;
       }
+      .home-2 .features-2-area .features-1-all-box {
+          margin: 20px 0 20px;
+      }
       #accordion6 {
           width: 100%;
           float: none;
@@ -3669,7 +3916,7 @@ h5.small-heading span {
       }
       .all-blog-posts-wrapper .col-12.col-sm-4.col-md-4 {
           max-width: 73%;
-          margin: 0 auto 30px;
+          margin: 0 auto 0;
       }
       .all-blog-posts-area .theme-button {
           margin: 20px auto 0;
@@ -3706,12 +3953,83 @@ h5.small-heading span {
           height: 35px;
       }
       .contact-form-wrapper .form-control {
-          height: 42px;
+          height: 45px;
       }
       .subscribe-area::after {
           font-size: 112px;
           top: 0;
       }
+
+      /*----------------------------------
+            Home 2 Responsive CSS
+        ---------------------------------*/
+      .hero-right-wrapper, .home-2 .about-left-side, .home-2 .features-1-area .background-shape{
+          display: none;
+      }
+      .home-2 .about-wrapper {
+          padding: 0 0 0;
+      }
+      .home-2 .about-right-side {
+          width: 100%;
+          margin-top: 0;
+      }
+      .home-2 .get-free-download-area .get-free-download-wrapper {
+          flex-direction: column-reverse;
+      }
+      .home-2 .free-download-mobile-mockup {
+          margin-bottom: 50px;
+      }
+      .home-2 .features-1-all-box .single-features-1-box:nth-child(2) {
+          margin-right: 0;
+      }
+      .home-2 .features-1-area {
+          padding: 57px 0 0;
+      }
+      .home-2 .single-features-1-box {
+          margin: 25px 0 0;
+      }
+      .home-2 .features-2-area .features-1-mobile-mockup {
+          display: block;
+      }
+      .home-2 .features-2-area .features-1-wrapper {
+          flex-direction: column-reverse;
+      }
+      /*-------- Home 2 Review Area ------- CSS*/
+      /*.review-comment-box {*/
+      /*    width: 60%;*/
+      /*}*/
+      /*.review-img-box {*/
+      /*    flex-direction: column;*/
+      /*}*/
+      /*.review-from-client-slider .nav-tabs a.nav-link:nth-child(1) {*/
+      /*    left: 112px;*/
+      /*    !*bottom: 48px;*!*/
+      /*}*/
+      /*.review-from-client-slider .nav-tabs a.nav-link:nth-child(2) {*/
+      /*    left: 20px;*/
+      /*    !*top: 260px;*!*/
+      /*}*/
+      /*.review-from-client-slider .nav-tabs a.nav-link:nth-child(3) {*/
+      /*    left: 62px;*/
+      /*    !*top: 120px;*!*/
+      /*}*/
+      /*.review-from-client-slider .nav-tabs a.nav-link:nth-child(4) {*/
+      /*    right: 75px;*/
+      /*    !*top: 122px;*!*/
+      /*}*/
+      /*.review-from-client-slider .nav-tabs a.nav-link:nth-child(5) {*/
+      /*    right: 0;*/
+      /*    !*top: 223px;*!*/
+      /*}*/
+      /*.review-from-client-slider .nav-tabs a.nav-link:nth-child(6) {*/
+      /*    right: 100px;*/
+      /*    !*bottom: 30px;*!*/
+      /*}*/
+      /*.review-content {*/
+      /*    text-align: center;*/
+      /*    margin-left: 0;*/
+      /*    margin-top: 10px;*/
+      /*}*/
 
   }
 
@@ -3751,12 +4069,36 @@ h5.small-heading span {
         font-size: 87px;
         top: 0;
     }
+    /*============= Home 2 Responsive CSS ==============*/
+
+    /*----- Review CSS ------ */
+    .review-from-client-slider .tab-content {
+        height: auto;
+    }
+    .review-comment-box {
+        width: 100%;
+    }
+    .comment-slide-1.review-from-client-slider nav {
+        margin: 30px 0;
+        display: flex;
+        justify-content: center;
+    }
+    .review-from-client-slider .nav-tabs a.nav-link {
+        position: unset;
+    }
+    .review-from-client-slider .nav-tabs .nav-link img {
+        height: 50px;
+    }
+
 }
   @media only screen and (min-width: 480px) and (max-width: 766px){
       .play-button {
           top: 34%;
           left: 43%;
       }
+      /*.app-screenshots-slider-area .owl-item.active.center .item .screenshots-box {*/
+      /*    padding: 22px 21px 9px 19px;*/
+      /*}*/
   }
 
 @media only screen and (max-width:480px){
@@ -3770,7 +4112,6 @@ h5.small-heading span {
     /*Header Area*/
       .theme-button {
           font-size: 13px;
-          padding: 13px 20px;
       }
       .hero-area-content h1 {
           font-size: 32px;
@@ -3890,13 +4231,13 @@ h5.small-heading span {
           padding: 24px;
       }
       .contact-form-wrapper .form-control {
-          height: 37px;
+          /*height: 37px;*/
       }
       .contact-form-wrapper form label {
           font-size: 15px;
       }
       .contact-form-wrapper .theme-button {
-          padding: 11px 22px 11px;
+          padding: 8px 19px 12px;
           margin-top: 6px;
       }
       .panel-collapse {
@@ -3919,6 +4260,15 @@ h5.small-heading span {
       }
       .screenshots_slide_nav span > i::before {
           font-size: 26px !important;
+      }
+      .home-2 .features-1-area .background-corner-bg-img {
+          display: none;
+      }
+      .home-2 .features-2-area .panel.panel-default {
+          margin-right: 0;
+      }
+      .home-2 #accordion6 .panel-title a > i::before {
+          font-size: 23px;
       }
 
   }
