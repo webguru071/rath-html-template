@@ -1503,11 +1503,18 @@ button:focus {
     /*background: linear-gradient(-150deg, #74d7f8, #2ca6ef);*/
 }
 .subm-btn input {
-    padding: 13px 40px;
+    padding: 10px 40px 14px;
+}
+.sending-gif img {
+    height: 50px;
+    margin-left: 20px;
+}
+.message-button-wrap{
+    margin-top: 30px;
 }
 .contact-form-wrapper .theme-button {
     padding: 0;
-    margin-top: 15px;
+    /*margin-top: 15px;*/
     font-weight: 600;
 }
 .contact-form-wrapper .alert-success {
