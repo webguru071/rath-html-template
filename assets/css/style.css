@@ -3994,42 +3994,14 @@ h5.small-heading span {
       .home-2 .features-2-area .features-1-wrapper {
           flex-direction: column-reverse;
       }
-      /*-------- Home 2 Review Area ------- CSS*/
-      /*.review-comment-box {*/
-      /*    width: 60%;*/
-      /*}*/
-      /*.review-img-box {*/
-      /*    flex-direction: column;*/
-      /*}*/
-      /*.review-from-client-slider .nav-tabs a.nav-link:nth-child(1) {*/
-      /*    left: 112px;*/
-      /*    !*bottom: 48px;*!*/
-      /*}*/
-      /*.review-from-client-slider .nav-tabs a.nav-link:nth-child(2) {*/
-      /*    left: 20px;*/
-      /*    !*top: 260px;*!*/
-      /*}*/
-      /*.review-from-client-slider .nav-tabs a.nav-link:nth-child(3) {*/
-      /*    left: 62px;*/
-      /*    !*top: 120px;*!*/
-      /*}*/
-      /*.review-from-client-slider .nav-tabs a.nav-link:nth-child(4) {*/
-      /*    right: 75px;*/
-      /*    !*top: 122px;*!*/
-      /*}*/
-      /*.review-from-client-slider .nav-tabs a.nav-link:nth-child(5) {*/
-      /*    right: 0;*/
-      /*    !*top: 223px;*!*/
-      /*}*/
-      /*.review-from-client-slider .nav-tabs a.nav-link:nth-child(6) {*/
-      /*    right: 100px;*/
-      /*    !*bottom: 30px;*!*/
-      /*}*/
-      /*.review-content {*/
-      /*    text-align: center;*/
-      /*    margin-left: 0;*/
-      /*    margin-top: 10px;*/
-      /*}*/
+      /*-------- Home 3 Responsive Area CSS ------- */
+      .home-3 .hero-area-content {
+          width: 60%;
+      }
+      .home-3 .hero-right-wrapper {
+          width: 37%;
+          display: flex;
+      }
 
   }
 
