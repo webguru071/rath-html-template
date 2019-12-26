@@ -276,20 +276,23 @@ figure {
     color: #42454f!important;
 }
 .home-4-bg-color, .home-4 #mainNav .navbar-nav .dropdown-menu a:hover, .home-4 .screenshots-slider-wrapper .owl-dot.active, .home-4 .reviews-slider-wrapper-4 .owl-dot.active,
-.reviews_slide_nav_4 .testi_prev:hover, .reviews_slide_nav_4 .testi_next:hover, .home-4 #scroll{
+.reviews_slide_nav_4 .testi_prev:hover, .reviews_slide_nav_4 .testi_next:hover, .home-4 #scroll, .home-4.mean-container a.meanmenu-reveal span,
+.home-4.mean-container .mean-nav ul li a:hover{
     background-color: #fe9f9f!important;
 }
 .home-4-primary-font-color, .home-4 .screenshots_slide_nav .flaticon-right-arrow:hover::before, .home-4 .screenshots_slide_nav .flaticon-left-arrow:hover::before,
-.home-4 .copyright-text p a, .home-4 .copyright-text p a:hover, .home-4 .terms-policy ul li a:hover, .reviews-slider-4 .review-content span i::before{
+.home-4 .copyright-text p a, .home-4 .copyright-text p a:hover, .home-4 .terms-policy ul li a:hover, .reviews-slider-4 .review-content span i::before, .home-4.mean-container a.meanmenu-reveal{
     color: #fe9f9f;
 }
 
 /*----- Home Version 5 Bg/Color CSS -----*/
 
-.home-5-primary-color, .home-5 #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover, .home-5 #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link.active, .home-5 .play-button{
+.home-5-primary-color, .home-5 #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover, .home-5 #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link.active, .home-5 .play-button,
+.home-5.mean-container a.meanmenu-reveal{
     color: #522ac5!important;
 }
-.home-5-primary-bg-color, .home-5 #mainNav .navbar-nav .dropdown-menu a:hover, .home-5 .single-review-slide-box, .home-5 .contact-form-area{
+.home-5-primary-bg-color, .home-5 #mainNav .navbar-nav .dropdown-menu a:hover, .home-5 .single-review-slide-box, .home-5 .contact-form-area,
+.home-5.mean-container a.meanmenu-reveal span, .home-5.mean-container .mean-nav ul li a:hover{
     background-color: #522ac5;
 }
 .home-5-secondary-color, .home-5 .review-content h2, .home-5 .contact-address ul li:nth-child(1) span i, .home-5 .contact-address ul li:nth-child(2) span i, .home-5 .contact-address ul li:nth-child(3) span i
@@ -2346,6 +2349,7 @@ h5.small-heading span {
 /*------Hero Area CSS-----*/
 .home-banner-area-3 {
     background-image: none;
+    overflow: hidden;
 }
 .home-banner-area-3 .hero-right-top-frame {
     bottom: -73px;
@@ -2849,9 +2853,6 @@ h5.small-heading span {
 .home-5 .theme-button::after{
     background: linear-gradient(-150deg, #fb238e, #f856a6);
 }
-.home-5 .subm-btn input {
-    padding: 10px 33px 13px;
-}
 
 /*------ Menu Area CSS -------*/
 .home-5 #mainNav .navbar-nav .nav-item .nav-link {
@@ -2935,6 +2936,7 @@ h5.small-heading span {
 }
 .home-5 .about-area .background-corner-bg-img {
     bottom: 8%;
+    z-index: -1;
 }
 /*---- How It Works Area CSS -----*/
 .how-it-works-area {
@@ -2949,8 +2951,8 @@ h5.small-heading span {
 }
 .how-it-works-box {
     text-align: center;
-    padding: 40px 30px;
-    box-shadow: 0px 0px 20px 2px rgba(0,0,0,.1);
+    padding: 20px 30px 40px;
+    box-shadow: 0 0 20px 2px rgba(0,0,0,.1);
     background-color: #fff;
 }
 .how-works-img {
@@ -3228,6 +3230,12 @@ h5.small-heading span {
       .reviews_slide_nav_4 .testi_prev, .reviews_slide_nav_4 .testi_next {
           top: 40%;
       }
+      .reviews_slide_nav_4 .testi_prev {
+          right: 92%;
+      }
+      .reviews_slide_nav_4 .testi_next {
+          right: 2%;
+      }
 
   }
 
@@ -3240,32 +3248,129 @@ h5.small-heading span {
     For Medium Screen
 ========================================*/
 
+@media only screen and (max-width: 1199px){
+
+    .about-right-side p.section-subheading {
+        margin: 29px 0 20px;
+    }
+    .all-blog-posts-area {
+        padding: 50px 0;
+    }
+    .features-1-area {
+        padding: 0 0 0;
+    }
+
+    /*---------Home 3 Responsive CSS--------*/
+    .home-3 h5.small-heading {
+        display: none;
+    }
+    .home-3 .home-banner-area-2 .hero-right-top-frame img {
+        border-radius: 47px;
+        height: 360px;
+    }
+    .home-3 .hero-right-bg img {
+        height: 260px;
+    }
+    #home-3-about-2 {
+        padding: 50px 0 80px;
+    }
+    .home-3 .about-left-side img {
+        height: 418px;
+    }
+    .home-3 .about-area-3 .about-wrapper {
+        justify-content: space-around;
+    }
+    .home-3 .about-area-3 .count-content {
+        width: 100px;
+        height: 100px;
+        font-size: 22px;
+    }
+    .how-it-works-area-3 .how-works-img {
+        width: 90px;
+        height: 90px;
+    }
+    .how-it-works-area-3 .how-it-works-box h3 {
+        font-weight: 400;
+        font-size: 22px;
+    }
+    .how-it-works-area-3 .how-it-works-box i::before {
+        font-size: 41px;
+    }
+    .reviews-slider-4 .review-content p, .reviews-slider-3 .review-content p {
+        font-size: 18px;
+    }
+    .reviews-slider-4 .review-content h2 {
+        font-size: 18px;
+    }
+    .team-title-area.section-title-area .section-subheading {
+        display: none;
+    }
+    .team-member-box img {
+        max-height: 220px;
+    }
+    .contact-area-3 .contact-form-address-wrapper {
+        padding: 100px 3px 0;
+    }
+    /*============= Home 4 Responsive CSS ==============*/
+    .home-4 .hero-right-bg img {
+        height: 500px;
+    }
+    /*============= Home 5 Responsive CSS ==============*/
+    .home-5 .app-screenshots-slider-area .section-title-area {
+        width: 95%;
+    }
+    .home-5 #mainNav .navbar-nav .nav-item:not(:last-child) .nav-link::before {
+        top: 22px;
+    }
+    .how-works-img span {
+        top: 48px;
+    }
+    .how-works-img span img {
+        height: 44px;
+    }
+    .how-it-works-box i::before {
+        font-size: 55px;
+    }
+    .how-it-works-box h3 {
+        font-size: 22px;
+        margin: 5px 0 5px;
+    }
+    .home-5 .all-blog-posts-area {
+        padding: 93px 0 50px;
+    }
+    .home-5 p.section-subheading {
+        margin: 31px auto 50px;
+    }
+    .all-blog-posts-area .theme-button {
+        margin: 20px auto 0;
+    }
+    .single-blog-post img {
+        max-height: 240px;
+    }
+    /*----- Home 5 Page CSS -----*/
+    .home-5 .hero-area-content {
+        padding-bottom: 120px;
+    }
+    .home-5 .hero-right-bg img{
+        height: 399px;
+    }
+
+}
+
   @media only screen and (min-width: 992px) and (max-width: 1199px){
 
       section {
           padding: 50px 0;
       }
       .features-1-area {
-          padding: 50px 0 0;
+          /*padding: 50px 0 0;*/
       }
-      .features-2-area {
+      .features-1-area.features-2-area {
           padding: 50px 0;
       }
       /*Main Menu Bar*/
       .mobile_menu{
           display: none!important;
-      }
-      /*#mainNav .navbar-nav .nav-item .nav-link {*/
-      /*    padding: 3px 10px 6px;*/
-      /*}*/
-      /*#mainNav ul li.nav-item:last-child a.nav-link {*/
-      /*    padding: 3px 14px 6px;*/
-      /*}*/
-      /*#mainNav .navbar-nav .nav-item .nav-link::after {*/
-      /*    bottom: -6px;*/
-      /*}*/
-      #mainNav .navbar-nav ul.dropdown-menu {
-          /*padding: 26px 0 0 0;*/
       }
       #mainNav .navbar-nav .nav-item .nav-link {
           font-size: 15px;
@@ -3435,14 +3540,23 @@ h5.small-heading span {
 
   @media only screen and (max-width: 991px) {
 
+      /*----- Home 5 Page CSS -----*/
+      .home-5 .hero-area-content {
+          padding-bottom: 76px;
+      }
+      .home-5 .hero-right-bg img {
+          height: 340px;
+      }
 
   }
-
 
   @media only screen and (min-width: 768px) and (max-width: 991px){
 
       section {
           padding: 50px 0;
+      }
+      .features-1-area {
+          padding: 25px 0 25px;
       }
 
       /*Main Menu Bar*/
@@ -3621,10 +3735,10 @@ h5.small-heading span {
           height: 460px;
           border-radius: 18px;
       }
-      .home-2 .about-left-side > img.home-2-about-base-img {
+      .home-2 .about-left-side > img.home-2-about-base-img, .home-4 .about-left-side > img.home-2-about-base-img {
           height: 350px;
       }
-      .home-2 .about-left-side::before {
+      .home-2 .about-left-side::before , .home-4 .about-left-side::before {
           /*height: 407px;*/
           width: 274px;
           /*right: -7px;*/
@@ -3644,6 +3758,17 @@ h5.small-heading span {
       }
       .video-area p {
           font-size: 18px;
+      }
+      /*============= Home 4 Responsive CSS ==============*/
+      .home-4 .hero-right-bg img, .home-4 .home-banner-area-4 .hero-right-top-frame img {
+          height: 360px;
+      }
+      .home-4 .home-banner-area-4 .hero-right-top-frame {
+          bottom: 0;
+          left: 100%;
+      }
+      .home-4 .contact-area {
+          padding: 50px 0 0;
       }
 
   }
@@ -3740,6 +3865,9 @@ h5.small-heading span {
           padding: 7px 27px 11px;
       }
       /*--------About Area CSS--------*/
+      .home-banner-area-3 {
+          overflow: hidden;
+      }
       .home-3 .hero-area-content {
           width: 50%;
       }
@@ -3802,7 +3930,7 @@ h5.small-heading span {
           margin-top: 56px;
       }
       .section-title-area {
-          margin-bottom: 0;
+          /*margin-bottom: 0;*/
           text-align: center;
       }
       .play-button {
@@ -4002,6 +4130,71 @@ h5.small-heading span {
           width: 37%;
           display: flex;
       }
+      .home-3 .hero-button-box a img {
+          height: 45px;
+      }
+      .home-3 .hero-right-bg img {
+          height: 230px;
+      }
+      .home-3 .home-banner-area-2 .hero-right-top-frame img {
+          height: 332px;
+      }
+      #home-3-about-2.about-area-3 .about-right-side {
+          width: 100%;
+      }
+      #home-3-about-2.about-area-3 .section-title-area , .home-3 .about-area-3.home-3-main-about .about-wrapper .section-title-area{
+          margin-bottom: 25px;
+          text-align: left;
+      }
+      .home-3 .about-area-3.home-3-main-about .about-wrapper {
+          flex-direction: column-reverse;
+      }
+      .home-3 .about-area-3 .about-right-side {
+          width: 100%;
+      }
+      .works-dash-line {
+          top: 8%;
+          z-index: -1;
+      }
+      .reviews_slide_nav_4 .testi_prev, .reviews_slide_nav_4 .testi_next {
+          top: 40%;
+      }
+      .reviews_slide_nav_4 .testi_prev {
+          right: 91%;
+      }
+      #team .section-heading {
+          text-align: left;
+          margin-bottom: 30px;
+      }
+      .team-member-box img {
+          height: 157px;
+      }
+      .home-3 .faq-area #accordion6, .home-4 .faq-area #accordion6 {
+          flex-direction: column;
+      }
+      .home-3 .subscribe-form-part .theme-button {
+          padding: 11px 24px 15px;
+      }
+      .contact-area-3 .contact-form-address-wrapper {
+          display: flex;
+          flex-direction: column-reverse;
+      }
+      .contact-area-3 .contact-form-wrapper {
+          padding: 0 6px 12px 10px;
+      }
+      .reviews-slider-4 .single-review-slide-box {
+          padding: 30px;
+      }
+      .reviews_slide_nav_4 .testi_prev, .reviews_slide_nav_4 .testi_next {
+          width: 50px;
+          height: 50px;
+      }
+      .faq-area #accordion6 .panel:first-child .panel-heading {
+          padding-top: 30px;
+      }
+      .home-4 .features-1-area {
+          padding: 57px 0 50px;
+      }
 
   }
 
@@ -4074,7 +4267,51 @@ h5.small-heading span {
   }
 
 @media only screen and (max-width:480px){
-
+    .home-3 .hero-area-content {
+        width: 100%;
+    }
+    .home-3 .hero-right-wrapper , .works-dash-line{
+        display: none;
+    }
+    .home-3 .video-area {
+        padding: 50px 0 50px;
+    }
+    .about-area-3 .counter-box {
+        margin: 0 8px 0 0;
+    }
+    .home-3 .about-area-3 .count-content {
+        width: 80px;
+        height: 80px;
+    }
+    .home-3 .subscribe-form-part .form-inline {
+        width: 100%;
+    }
+    .home-3 .subscribe-form-part .theme-button {
+        padding: 11px 24px 15px;
+    }
+    .home-3 .subscribe-area {
+        padding: 0 0 50px;
+        margin-top: -90px;
+    }
+    .faq-area-3 {
+        padding: 50px 0 50px;
+    }
+    .how-it-works-area .section-title-area {
+        width: 100%;
+    }
+    .how-it-works-wrapper {
+        flex-direction: column;
+    }
+    .how-it-works-area-3 .how-it-works-box {
+        width: 100%;
+        margin: 15px 0;
+    }
+    .reviews_slide_nav_4 .testi_prev {
+        right: 86%;
+    }
+    .reviews_slide_nav_4 .testi_next {
+        right: 3%;
+    }
 }
 
 /*=========================================
@@ -4241,6 +4478,21 @@ h5.small-heading span {
       }
       .home-2 #accordion6 .panel-title a > i::before {
           font-size: 23px;
+      }
+      .team-member-box img {
+          height: 120px;
+      }
+      .reviews_slide_nav_4 .testi_prev, .reviews_slide_nav_4 .testi_next {
+          top: 40%;
+      }
+      .reviews_slide_nav_4 .testi_prev {
+          right: 83%;
+      }
+      .reviews_slide_nav_4 .testi_next {
+          right: 15px;
+      }
+      .home-3 .subscribe-form-part .theme-button {
+          padding: 9px 24px 10px;
       }
 
   }
