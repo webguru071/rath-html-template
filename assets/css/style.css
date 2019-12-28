@@ -1698,6 +1698,7 @@ header.page-banner-area .header-caption-heading {
     height: 40px;
     width: 40px;
     margin: 0 5px;
+    padding: 10px;
 }
 .pagination-area li:first-child .page-link, .pagination-area li:last-child .page-link {
     border-radius: 0;
@@ -3357,6 +3358,39 @@ h5.small-heading span {
     .home-5 .hero-right-bg img{
         height: 399px;
     }
+    /*---------Blog Page CSS-------*/
+    .all-blog-posts-area.grid-blog-page {
+        padding: 50px 0;
+    }
+    .pagination-area {
+        margin: 20px auto 0;
+    }
+    .widget-recent-posts ul li a p > span {
+        padding-top: 5px;
+    }
+    .widget-recent-posts ul li a p {
+        font-size: 15px;
+    }
+    .widget.widget-search {
+        margin: 40px 0 0;
+    }
+    .widget h4.widget-title {
+        margin: 40px 0 40px;
+    }
+    .widget-categories ul li a span.cat-number::before {
+        width: 37px;
+        left: -40px;
+    }
+    .blog-content-with-media {
+        flex-direction: column-reverse;
+    }
+    .blog-media-box{
+        margin: 50px 0;
+    }
+    .blog-media-box::before {
+        left: 31%;
+        top: -25%;
+    }
 
 }
 
@@ -3567,6 +3601,9 @@ h5.small-heading span {
       }
       .home-5 .reviews_slide_nav .testi_prev, .home-5 .reviews_slide_nav .testi_next {
           top: 76%;
+      }
+      .blog-media-box::before {
+          left: 37%;
       }
 
   }
@@ -3905,7 +3942,12 @@ h5.small-heading span {
       .home-3 .home-banner-area-2 .hero-right-top-frame img {
           height: 380px;
       }
-
+      .sidebar .widget {
+          width: 38%;
+      }
+      #content {
+          padding-right: 0;
+      }
 
 }
 
@@ -4269,6 +4311,12 @@ h5.small-heading span {
           margin-top: 0;
           margin-bottom: 0;
       }
+      .sidebar .widget {
+          width: 47%;
+      }
+      .blog-media-box::before {
+          left: 32%;
+      }
 
   }
 
@@ -4341,6 +4389,12 @@ h5.small-heading span {
     }
     .home-5 .hero-button-box a img {
         height: 45px;
+    }
+    .single-blog-content {
+        padding: 23px;
+    }
+    .blog-media-box::before {
+        left: 30%;
     }
 
 }
@@ -4597,6 +4651,50 @@ h5.small-heading span {
       }
       .how-it-works-box {
           margin: 0 0 30px;
+      }
+      .home-5 .about-right-side {
+          margin-left: 38px;
+      }
+      #accordion6 .panel-title a::before, #accordion6 .panel-title a.collapsed::before {
+          top: 16px;
+      }
+      #accordion6 .panel-title a > i {
+          margin-right: 10px;
+      }
+      #accordion6 .panel-title a > i::before, #accordion6 .panel:nth-child(2) .panel-title a > i::before, #accordion6 .panel:nth-child(3) .panel-title a > i::before,
+      .home-5 #accordion6 .panel-title a > i::before, .home-5 #accordion6 .panel:nth-child(2) .panel-title a > i::before, .home-5 #accordion6 .panel:nth-child(3) .panel-title a > i::before {
+          font-size: 24px;
+      }
+      .pagination-area li .page-link {
+          height: 30px;
+          width: 30px;
+          margin: 0 2px;
+          line-height: 7px;
+      }
+      .sidebar .widget {
+          width: 90%;
+      }
+      .blog-media-box::before {
+          left: 19%;
+      }
+      #content .about-author {
+          flex-direction: column;
+      }
+      #content h4.author-name {
+          padding-top: 15px;
+      }
+      #content .author-details {
+          padding-left: 0;
+      }
+      #content .author-details {
+          text-align: center;
+      }
+      #content blockquote {
+          padding: 10px 18px 22px 21px;
+      }
+      #content .card-footer-box div {
+          margin-right: 12px;
+          font-size: 12px;
       }
 
   }
