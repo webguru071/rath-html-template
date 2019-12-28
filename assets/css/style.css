@@ -2791,7 +2791,6 @@ h5.small-heading span {
 -------------------------------------------*/
 
 /*--------- Home Version 5 Default CSS ---------*/
-
 .home-5 h1, .home-5 h2, .home-5 h3, .home-5 h4, .home-5 h5, .home-5 h6{
     font-weight: 700;
 }
@@ -3016,25 +3015,28 @@ h5.small-heading span {
     top: 42%;
 }
 /*-------- App Screenshots Area CSS --------*/
-.home-5 .app-screenshots-slider-area .owl-item .item , .home-5 .app-screenshots-slider-area .owl-item.active.center .item{
-    transform: scale(1);
-}
+
 .home-5 .app-screenshots-slider-area .owl-item.active.center .item .screenshots-box {
-    margin: 0;
-    padding: 0;
-}
-.home-5 .app-screenshots-slider-area .owl-item.active.center .item {
-    background-image: none;
+    margin: 4% 5%;
     padding: 0;
 }
 .home-5 .app-screenshots-slider-area .owl-item.active.center .item img {
-    min-height: auto;
-    height: auto;
-    padding-top: 0;
+    height: 470px;
 }
-.home-5 .screenshots-box {
-    margin: 0;
+.home-5 .app-screenshots-slider-area .item img , .home-5 .app-screenshots-slider-area .owl-item.active.center .item img{
+    border-radius: 0!important;
 }
+.home-5 .app-screenshots-slider-area .owl-item .item {
+    transform: scale(1);
+}
+.home-5 .app-screenshots-slider-area .owl-item.active.center .item{
+    transform: scale(1);
+}
+
+.home-5 .app-screenshots-slider-area .owl-item.active.center .item {
+    background-image: none;
+}
+
 .home-5 .app-screenshots-slider-area .owl-dots {
     /*display: none !important;*/
 }
@@ -3151,20 +3153,22 @@ h5.small-heading span {
     #mainNav .navbar-nav .dropdown-menu a {
         font-size: 14px;
     }
+    /*------- App Screenshot Slider CSS -------*/
+    .app-screenshots-slider-area .owl-item .item {
+        transform: scale(.9);
+    }
     .app-screenshots-slider-area .owl-item.active.center .item {
         background-size: contain;
-        transform: scale(.8);
-        padding: 5px 17px;
     }
     .app-screenshots-slider-area .owl-item.active.center .item .screenshots-box {
-        margin: 0 0;
-        padding: 27px 18px 29px 15px;
+        margin: 3% 1%;
+        padding: 19px 20px 0;
     }
     .app-screenshots-slider-area .owl-item.active.center .item img {
-        height: 408px;
+        height: 460px;
     }
     .app-screenshots-slider-area .section-title-area {
-        margin: 0 13%;
+        margin: 0 13% 40px;
     }
     .reviews-bg-area {
         top: 11%;
@@ -3209,6 +3213,9 @@ h5.small-heading span {
     .home-5 .play-button {
         top: 35%;
     }
+    .home-5 .app-screenshots-slider-area .owl-item.active.center .item img {
+        height: 327px;
+    }
 
 }
 
@@ -3240,6 +3247,13 @@ h5.small-heading span {
       .reviews_slide_nav_4 .testi_next {
           right: 2%;
       }
+      .app-screenshots-slider-area .owl-item.active.center .item .screenshots-box {
+          margin: 0 1%;
+          padding: 19px 11px 0;
+      }
+      .app-screenshots-slider-area .owl-item.active.center .item img {
+          height: 430px;
+      }
 
   }
 
@@ -3263,7 +3277,21 @@ h5.small-heading span {
     .features-1-area {
         padding: 0 0 0;
     }
-
+    .app-screenshots-slider-area .owl-item.active.center .item .screenshots-box {
+        padding: 24px 11px 9px;
+    }
+    .app-screenshots-slider-area .owl-item.active.center .item img {
+        height: 430px;
+        border-bottom-left-radius: 18px;
+        border-bottom-right-radius: 18px;
+    }
+    .app-screenshots-slider-area .owl-carousel .owl-item img {
+        /*display: block;*/
+        width: 100%;
+    }
+    .home-5 .app-screenshots-slider-area .owl-item.active.center .item img {
+        height: 435px;
+    }
     /*---------Home 3 Responsive CSS--------*/
     .home-3 h5.small-heading {
         display: none;
@@ -3321,7 +3349,14 @@ h5.small-heading span {
     }
     /*============= Home 5 Responsive CSS ==============*/
     .home-5 .app-screenshots-slider-area .section-title-area {
-        width: 95%;
+        /*flex-direction: column;*/
+        margin: 25px auto;
+        /*padding: 0;*/
+        width: 38%;
+        float: none;
+    }
+    .home-5 .app-screenshots-slider-area p.section-subheading {
+        margin: 20px auto 20px;
     }
     .home-5 #mainNav .navbar-nav .nav-item:not(:last-child) .nav-link::before {
         top: 22px;
@@ -3470,12 +3505,12 @@ h5.small-heading span {
       .hero-area-content {
           width: 50%;
       }
-      .app-screenshots-slider-area .owl-item.active.center .item .screenshots-box {
-          padding: 20px 15px 0;
-      }
-      .app-screenshots-slider-area .owl-item.active.center .item img {
-          height: 438px;
-      }
+      /*.app-screenshots-slider-area .owl-item.active.center .item .screenshots-box {*/
+      /*    padding: 20px 15px 0;*/
+      /*}*/
+      /*.app-screenshots-slider-area .owl-item.active.center .item img {*/
+      /*    height: 438px;*/
+      /*}*/
       .free-download-mobile-mockup img {
           border-radius: 25px;
           height: 370px;
@@ -3527,11 +3562,18 @@ h5.small-heading span {
           font-size: 31px;
           top: 40px;
       }
-      .app-screenshots-slider-area .owl-item.active.center .item img {
-          height: 350px;
+      .app-screenshots-slider-area .owl-item.active.center .item .screenshots-box {
+          padding: 17px 11px 5px;
       }
-      .app-screenshots-slider-area .section-title-area {
-          margin: 0 2%;
+      .app-screenshots-slider-area .owl-item.active.center .item img {
+          height: 336px;
+      }
+      .app-screenshots-slider-area .owl-carousel .owl-item img {
+          /*display: block;*/
+          width: 100%;
+      }
+      .home-5 .app-screenshots-slider-area .owl-item.active.center .item img {
+          height: 354px;
       }
       .free-download-mobile-mockup img {
           height: 390px;
@@ -3830,34 +3872,32 @@ h5.small-heading span {
       }
 
   }
+
   @media only screen and  (max-width: 991px){
     .app-screenshots-slider-area .testi_next {
         right: 10%;
     }
     .app-screenshots-slider-area .owl-item.active.center .item {
         transform: scale(.9);
-    }
-    .app-screenshots-slider-area .owl-item.active.center .item {
-        /*background-image: url("../img/screenshots-slider-img/mobile-bg.png");*/
-        /*background-repeat: no-repeat;*/
         background-size: contain;
-        /*background-position: center;*/
-        /*!* transition: .5s; *!*/
-        /*padding: 5px 0;*/
     }
-    .app-screenshots-slider-area .owl-item.active.center .item .screenshots-box {
-        margin: 3% 2%;
-        padding: 27px 18px 7px 15px;
-    }
-      .app-screenshots-slider-area .item img {
-          /*height: 440px;*/
+      .app-screenshots-slider-area .owl-carousel .owl-item img {
           width: auto;
       }
+      .app-screenshots-slider-area .owl-item.active.center .item .screenshots-box {
+          margin: 0 0;
+          padding: 26px 35px 0 19px;
+      }
       .app-screenshots-slider-area .owl-item.active.center .item img {
-          height: 507px;
-          padding: 3px 1px 4px;
-          width: 242px;
+          height: 483px;
+          padding: 1px 0px 7px 17px;
+          width: 244px;
           margin: 0 auto;
+          border-bottom-left-radius: 35px !important;
+          border-bottom-right-radius: 35px !important;
+      }
+      .app-screenshots-slider-area .screenshots-box {
+          margin: 0;
       }
       /*===========Home 3 Responsive CSS==========*/
       #home-3-about-2 {
@@ -3947,6 +3987,12 @@ h5.small-heading span {
       }
       #content {
           padding-right: 0;
+      }
+      .home-5 .app-screenshots-slider-area .screenshots-box, .home-5 .app-screenshots-slider-area .owl-item.active.center .item .screenshots-box {
+          margin: 0;
+      }
+      .home-5 .app-screenshots-slider-area .owl-item.active.center .item img,  .home-5 .app-screenshots-slider-area .owl-item .item img {
+          height: 435px;
       }
 
 }
@@ -4325,6 +4371,9 @@ h5.small-heading span {
   =========================================*/
 
 @media only screen and (max-width: 766px){
+    .screenshots-slider{
+        padding-bottom: 20px;
+    }
     .app-screenshots-slider-area .owl-item.active.center .item img {
         /*height: 470px;*/
         width: auto;
@@ -4339,9 +4388,6 @@ h5.small-heading span {
     }
     .app-screenshots-slider-area .testi_next {
         right: 7%;
-    }
-    .screenshots-slider {
-        max-height: 530px;
     }
     .contact-form-wrapper {
         width: 100%;
@@ -4396,6 +4442,16 @@ h5.small-heading span {
     .blog-media-box::before {
         left: 30%;
     }
+    .home-5 .app-screenshots-slider-area .owl-item.active.center .item img, .home-5 .app-screenshots-slider-area .owl-item .item img {
+        height: 350px;
+    }
+    .home-5 .app-screenshots-slider-area .owl-dots {
+        bottom: -16px;
+        left: 126px;
+    }
+    .home-5 .app-screenshots-slider-area .section-title-area {
+        width: 100%;
+    }
 
 }
   @media only screen and (min-width: 480px) and (max-width: 766px){
@@ -4403,9 +4459,9 @@ h5.small-heading span {
           top: 34%;
           left: 43%;
       }
-      /*.app-screenshots-slider-area .owl-item.active.center .item .screenshots-box {*/
-      /*    padding: 22px 21px 9px 19px;*/
-      /*}*/
+      .app-screenshots-slider-area .screenshots-box .screenshots-box {
+          margin: 8% 18%;
+      }
   }
 
 @media only screen and (max-width:480px){
@@ -4578,9 +4634,6 @@ h5.small-heading span {
           /*height: 237px;*/
           width: 100%;
       }
-      .single-blog-content h4 {
-          font-size: 18px;
-      }
       .single-blog-content h6 {
           margin: 15px 0;
           font-size: 12px;
@@ -4615,6 +4668,12 @@ h5.small-heading span {
       }
       .app-screenshots-slider-area .testi_prev, .app-screenshots-slider-area .testi_next {
           top: 98%;
+      }
+      .app-screenshots-slider-area .owl-item.active.center .item img {
+          padding: 2px 0px 8px 11px;
+      }
+      .app-screenshots-slider-area .screenshots-box {
+          margin: 12% 6%;
       }
       .screenshots_slide_nav span > i::before {
           font-size: 26px !important;
@@ -4695,6 +4754,15 @@ h5.small-heading span {
       #content .card-footer-box div {
           margin-right: 12px;
           font-size: 12px;
+      }
+      header.page-banner-area .header-caption-heading {
+          font-size: 32px;
+      }
+      .card-title > a, .card-title {
+          font-size: 28px;
+      }
+      .home-5 .app-screenshots-slider-area .owl-dots {
+          left: 65px;
       }
 
   }

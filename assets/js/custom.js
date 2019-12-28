@@ -120,6 +120,8 @@
     screenshots_slide.trigger('prev.owl.carousel');
   });
 
+  // ---- App Screenshots Slider JS
+
 //---- Veno Box-----------
 
     $('.venobox').venobox();
