@@ -3205,6 +3205,9 @@ h5.small-heading span {
     .reviews_slide_nav_4 .testi_prev, .reviews_slide_nav_4 .testi_next {
         top: 40%;
     }
+    .home-5 .play-button {
+        top: 35%;
+    }
 
 }
 
@@ -3540,12 +3543,30 @@ h5.small-heading span {
 
   @media only screen and (max-width: 991px) {
 
+      .get-free-download-wrapper .section-title-area {
+          width: 49%;
+      }
+      .get-free-download-wrapper .section-title-area .section-subheading {
+          margin: 31px 0 40px;
+      }
       /*----- Home 5 Page CSS -----*/
       .home-5 .hero-area-content {
           padding-bottom: 76px;
       }
       .home-5 .hero-right-bg img {
           height: 340px;
+      }
+      .how-it-works-box {
+          padding: 20px 11px 40px;
+      }
+      .home-5 .message-area .form-control {
+          height: 153px;
+      }
+      .home-5 .about-right-side p.section-subheading {
+          margin: 29px 0 30px;
+      }
+      .home-5 .reviews_slide_nav .testi_prev, .home-5 .reviews_slide_nav .testi_next {
+          top: 76%;
       }
 
   }
@@ -4000,7 +4021,7 @@ h5.small-heading span {
           border-radius: 23px;
           height: 378px;
       }
-      .features-2-area .features-1-mobile-mockup {
+      .features-2-area .features-1-mobile-mockup, .reviews-bg-area , .home-5 .hero-right-wrapper {
           display: none;
       }
       .features-1-all-box.features-2-all-box {
@@ -4020,9 +4041,6 @@ h5.small-heading span {
       }
       .subscribe-area .section-subheading {
           font-size: 18px;
-      }
-      .reviews-bg-area {
-          display: none;
       }
       .reviews_slide_nav .testi_prev, .reviews_slide_nav .testi_next {
           top: 80%;
@@ -4196,6 +4214,62 @@ h5.small-heading span {
           padding: 57px 0 50px;
       }
 
+      /*============= Home 5 Responsive CSS ==============*/
+      .home-5 .hero-area-content {
+          width: 100%;
+      }
+      .home-5 .hero-area-content {
+          padding-bottom: 126px;
+      }
+      .home-5 .about-left-side img {
+          height: 370px;
+      }
+      .home-5 .about-left-side::after {
+          bottom: 34%;
+          right: -39px;
+      }
+      .home-5 .about-right-side {
+          margin-left: 90px;
+          margin-top: 15px;
+      }
+      .home-5 .about-right-side .section-title-area {
+          margin-bottom: 0;
+          text-align: left;
+      }
+      .home-5 .about-wrapper {
+          flex-direction: row;
+      }
+      .how-it-works-area .section-title-area {
+          width: 100%;
+      }
+      .how-it-works-box {
+          padding: 50px 20px 60px;
+          margin: 0 50px 30px;
+      }
+      .how-works-img span {
+          top: 80px;
+      }
+      .home-5 .reviews-slider-wrapper {
+          flex-direction: column-reverse;
+      }
+      .home-5 .reviews-slider-wrapper .section-title-area {
+          margin: 50px 0;
+      }
+      .single-blog-post img {
+          max-height: 270px;
+          width: 100%;
+      }
+      .home-5 .contact-form-area {
+          padding: 50px 0;
+      }
+      .home-5 .contact-form-area .row {
+          flex-direction: column-reverse;
+      }
+      .home-5 .contact-form-wrapper {
+          margin-top: 0;
+          margin-bottom: 0;
+      }
+
   }
 
   /*========================================
@@ -4254,6 +4328,20 @@ h5.small-heading span {
     .review-from-client-slider .nav-tabs .nav-link img {
         height: 50px;
     }
+    .home-5 .about-left-side {
+        display: none;
+    }
+    .home-5 .video-wrapper img {
+        height: 230px;
+        width: 100%;
+    }
+    .home-5 .play-button {
+        top: 39%;
+        left: 48%;
+    }
+    .home-5 .hero-button-box a img {
+        height: 45px;
+    }
 
 }
   @media only screen and (min-width: 480px) and (max-width: 766px){
@@ -4311,6 +4399,13 @@ h5.small-heading span {
     }
     .reviews_slide_nav_4 .testi_next {
         right: 3%;
+    }
+    .home-5 .video-wrapper img {
+        height: 160px;
+    }
+    .home-5 .play-button {
+        top: 32%;
+        left: 44%;
     }
 }
 
@@ -4493,6 +4588,15 @@ h5.small-heading span {
       }
       .home-3 .subscribe-form-part .theme-button {
           padding: 9px 24px 10px;
+      }
+      .home-5 .hero-area-content h1 {
+          font-size: 32px;
+      }
+      .home-5 h2.section-heading {
+          font-size: 28px;
+      }
+      .how-it-works-box {
+          margin: 0 0 30px;
       }
 
   }
