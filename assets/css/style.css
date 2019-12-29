@@ -76,18 +76,10 @@ a:hover {
 ------------------------------- */
 a, #mainNav, .theme-button, .owl-carousel button.owl-dot, .widget-recent-posts ul li a p:hover{
     transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    -ms-transition: all .5s ease-in-out;
 }
 
 .slow-transition, .theme-button, .reviews_slide_nav .testi_prev, .reviews_slide_nav .testi_next, .testi_prev, .testi_next, .flaticon-right-arrow::before , .flaticon-left-arrow::before, #scroll, .home-5 #mainNav .navbar-nav .nav-item .nav-link::before{
     transition: all .7s ease-in-out;
-    -webkit-transition: all .7s ease-in-out;
-    -moz-transition: all .7s ease-in-out;
-    -o-transition: all .7s ease-in-out;
-    -ms-transition: all .7s ease-in-out;
 }
 
   ul li {
@@ -112,23 +104,11 @@ a, #mainNav, .theme-button, .owl-carousel button.owl-dot, .widget-recent-posts u
       text-decoration: none;
       color: #50bef3;
   }
-  ::-moz-selection {
-      background-color: #93ebfb;
-  }
 
   ::selection {
       background-color: #93ebfb;
   }
-
-  img::-moz-selection {
-    background: transparent;
-  }
-
   img::selection {
-    background: transparent;
-  }
-
-  img::-moz-selection {
     background: transparent;
   }
   .page-link:focus {
@@ -149,19 +129,9 @@ a, #mainNav, .theme-button, .owl-carousel button.owl-dot, .widget-recent-posts u
       border-color: #dddddd;
       box-shadow: none;
   }
-  .form-control::-webkit-input-placeholder {
+  .form-control::placeholder {
       color: #a0a3aa;
   }
-  .form-control::-moz-placeholder {
-      color: #a0a3aa;
-  }
-  .form-control:-moz-placeholder {
-      color: #a0a3aa;
-  }
-  .form-control::-ms-input-placeholder {
-      color: #a0a3aa;
-  }
-
 
 /*------------------------------------------
             2.  Typography
@@ -508,7 +478,6 @@ button:focus {
     height: 94px;
     display: flex !important;
     transition: all ease .6s;
-    -webkit-transition: all ease .6s;
 }
 #mainNav.navbar-shrink {
     background-color: #fff;
@@ -576,12 +545,6 @@ button:focus {
  /* Mean Menu / Mobile Menu Style */
 .mean-container .mean-nav ul li a:hover {
     background: #2ca6ef;
-}
-.mean-container .mean-nav ul li.dropdown.active a.nav-link.js-scroll-trigger:not a:hover{
-    /*background: red;*/
-}
-.mean-container .mean-nav ul li.dropdown.active a.nav-link.js-scroll-trigger{
-
 }
 .mean-container .mean-bar {
     background-color: #fff;
@@ -731,8 +694,6 @@ button:focus {
     border-radius: 5px;
 }
 .hero-button-box .theme-button{
-    -webkit-box-shadow: 0 6px 15px 0 rgba(44,166,239,.5);
-    -moz-box-shadow: 0 6px 15px 0 rgba(44,166,239,.5);
     box-shadow: 0 6px 15px 0 rgba(44,166,239,.5);
     line-height: 15px;
     padding: 16px 30px;
@@ -759,11 +720,9 @@ button:focus {
     left: 10%;
 }
 .particle-bg img {
-    -webkit-animation: spin 27s linear infinite;
     animation: spin 27s linear infinite;
 }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+@keyframes spin { 100% { transform:rotate(360deg); } }
 
 /*-------------------------------------------
             5. Header Area End
@@ -839,7 +798,6 @@ button:focus {
 .video-wrapper img {
     border-radius: 32px;
     width: 100%;
-    -webkit-box-shadow: 13px 16px 27px 4px rgba(0,0,0,.18);
     box-shadow: 13px 16px 27px 4px rgba(0,0,0,.18);
 }
 .play-button {
@@ -859,8 +817,6 @@ button:focus {
     align-items: center;
 
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    -moz-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     animation: shadow-pulse 3s infinite;
 
     z-index: 9;
@@ -907,10 +863,6 @@ button:focus {
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-play-state: running;
-    -webkit-animation-name: bobbingAnim;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-play-state: running;
 }
 @keyframes bobbingAnim {
     0% {
@@ -929,22 +881,6 @@ button:focus {
     }
 }
 
-@-webkit-keyframes bobbingAnim {
-    0% {
-        -webkit-transform: translate(0px, 0px);
-        -webkit-animation-timing-function:ease-in-out
-    }
-
-    50% {
-        -webkit-transform: translate(0px, 14px);
-        -webkit-animation-timing-function:ease-in-out
-    }
-
-    100% {
-        -webkit-transform: translate(0px, 0px);
-        -webkit-animation-timing-function:ease-in-out
-    }
-}
 .app-screenshots-slider-area .background-shape img {
     max-width: 100%;
 }
@@ -1038,16 +974,12 @@ button:focus {
     margin: 31px 0 70px;
 }
 .get-free-download-wrapper .hero-button-box a {
-    -moz-box-shadow: 0 18px 21px 0 rgba(0,0,0,.2);
-    -webkit-box-shadow: 0 18px 21px 0 rgba(0,0,0,.2);
     box-shadow: 0 18px 21px 0 rgba(0,0,0,.2);
     display: inline-block;
     border-radius: 12px;
     margin-right: 15px;
 }
 .free-download-mobile-mockup img {
-    -moz-box-shadow: -13px 2px 26px -3px rgba(0,0,0,.4);
-    -webkit-box-shadow: -13px 2px 26px -3px rgba(0,0,0,.4);
     box-shadow: -13px 2px 26px -3px rgba(0,0,0,.4);
     border-radius: 43px;
     background: transparent;
@@ -1107,8 +1039,6 @@ button:focus {
     background-color: #fca063;
 }
 .features-1-mobile-mockup img {
-    -moz-box-shadow: -13px 13px 26px -6px rgba(0,0,0,.3);
-    -webkit-box-shadow: -13px 13px 26px -6px rgba(0,0,0,.3);
     box-shadow: -13px 13px 26px -6px rgba(0,0,0,.3);
     border-radius: 47px;
 }
@@ -1470,7 +1400,6 @@ button:focus {
     font-size: 27px;
 }
 .contact-form-wrapper {
-    -webkit-box-shadow: 0 0 20px 0 rgba(0,0,0,.1);
     box-shadow: 0 0 20px 0 rgba(0,0,0,.1);
     padding: 60px 70px 70px;
     position: relative;
@@ -1500,9 +1429,7 @@ button:focus {
     width: 100%;
     color: #fff;
     background-color: #2B542C;
-    border-color: #2B542C;
     border-radius: 0;
-    -webkit-box-shadow: 5px 5px 0 0 #2B542C;
     box-shadow: 5px 5px 0 0 #2B542C;
 }
 .google-map iframe {
@@ -1921,7 +1848,6 @@ header.page-banner-area .header-caption-heading {
     padding: 5px 9px;
     margin: 1px;
     font-size: 14px;
-    border: 1px solid #edeeef;
     color: #777c87;
     text-transform: capitalize;
 }
@@ -2159,14 +2085,12 @@ header.page-banner-area .header-caption-heading {
     border-radius: 50%;
 }
 .review-from-client-slider .nav-tabs .nav-link.active img {
-    -webkit-filter: grayscale(0);
     filter: grayscale(0);
     border: 2px solid #3b328e;
 }
 .review-from-client-slider .nav-tabs .nav-link img{
     border: 2px solid transparent;
     border-radius: 50%;
-    -webkit-filter: grayscale(1);
     filter: grayscale(1);
     transition: .7s;
 }
@@ -2516,7 +2440,6 @@ h5.small-heading span {
     position: relative;
     margin: 0;
     padding: 100px 100px 0;
-    -webkit-box-shadow: 4px 7px 24px 5px rgba(0,0,0,.2);
     box-shadow: 4px 7px 24px 5px rgba(0,0,0,.2);
 }
 .contact-area-3 .contact-form-area h2.section-heading > span {
@@ -2601,13 +2524,13 @@ h5.small-heading span {
     left: 100%;
 }
 .home-4 .hero-button-box .theme-button:first-child, .home-4 .hero-button-box .theme-button:last-child {
-    background: #fbe3e3;
+    background-color: #fbe3e3;
     color: #42454f !important;
     margin-left: 0;
-    border: 1px solid #fbe3e3;
+    border: 1px solid #fbe3e4;
 }
 .home-4 .hero-button-box .theme-button:first-child:hover, .home-4 .hero-button-box .theme-button:last-child:hover {
-    background: #fe9f9f;
+    background-color: #fe9f9f;
     color: #42454f !important;
 }
 /*------About Area CSS------*/

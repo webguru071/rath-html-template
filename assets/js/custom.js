@@ -15,9 +15,7 @@
     });
 // Preloader End
 
-/*-------------------------------
-     MAIN MENU SCRIPT START
----------------------------------*/
+/// MAIN MENU SCRIPT START
 
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
@@ -75,11 +73,7 @@
   });
   // mobile Menu area
 
-  /*-------------------------------
-     MAIN MENU SCRIPT END
----------------------------------*/
-
-//----COUNTER PLUGIN Start
+  // MAIN MENU SCRIPT END
 
   // Jquery counterUp
   $('.counter').counterUp({
@@ -122,12 +116,12 @@
 
   // ---- App Screenshots Slider JS
 
-//---- Veno Box-----------
+// Veno Box
 
-    $('.venobox').venobox();
+  $('.venobox').venobox();
 
 
-  //-----------Reviews Slider
+  // Reviews Slider
   var reviews_slide = $('.reviews-slider');
   reviews_slide.owlCarousel({
     loop:true,
@@ -158,9 +152,9 @@
   $('.reviews_slide_nav .testi_prev').on('click', function() {
     reviews_slide.trigger('prev.owl.carousel');
   });
-  //--------------Reviews Slider
+  // Reviews Slider
 
-  //-----------Home 4 Reviews Slider
+  // Home 4 Reviews Slider
   var reviews_slide_4 = $('.reviews-slider-4');
   reviews_slide_4.owlCarousel({
     loop:true,
@@ -191,9 +185,9 @@
   $('.reviews_slide_nav_4 .testi_prev').on('click', function() {
     reviews_slide_4.trigger('prev.owl.carousel');
   });
-  //--------------Reviews Slider
+  // Reviews Slider
 
-  //----------Clients Logo Slider
+  // Clients Logo Slider
   var client_logo_slide = $('.client-logo-slider');
   client_logo_slide.owlCarousel({
     loop:true,
@@ -217,9 +211,9 @@
       }
     }
   });
-  //---------Clients Logo Slider
+  // Clients Logo Slider
 
-  //-----------Scroll To Top
+  // Scroll To Top
     $(window).scroll(function () {
         if ($(this).scrollTop() > 200) {
             $('#scroll').fadeIn();
@@ -233,11 +227,9 @@
         }, 600);
         return false;
     });
-  //-----------Scroll To Top
+  // Scroll To Top
 
-  /*----------------------------------------
-       CONTACT FORM
-   ----------------------------------------*/
+  //CONTACT FORM
 
   $('#contact-form').submit(function (e) {
     e.preventDefault();
@@ -287,12 +279,10 @@
         });
   });
 
-  //--------Initialize WOW JS
+  // Initialize WOW JS
   new WOW().init();
 
-  /*----------------------------------------
-       Disable copy
-   ----------------------------------------*/
+  //  Disable copy
 
   // $('body').bind('cut copy paste', function (e) {
   //   e.preventDefault();
