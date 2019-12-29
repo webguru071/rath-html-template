@@ -758,6 +758,7 @@ button:focus {
 }
 .counter-box {
     position: relative;
+    text-align: center;
 }
 .count-content {
     font-size: 42px;
