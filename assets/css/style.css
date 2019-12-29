@@ -512,7 +512,7 @@ button:focus {
 }
 #mainNav.navbar-shrink {
     background-color: #fff;
-    box-shadow: 0px 0px 9px 3px rgba(50,29,154,.2);
+    box-shadow: 0 0 9px 3px rgba(50,29,154,.2);
 }
 #mainNav .navbar-brand {
     position: relative;
@@ -555,7 +555,6 @@ button:focus {
 }
 #mainNav .navbar-nav ul.dropdown-menu {
     background-color: #2c303a;
-    /*padding: 15px 0 15px 0;*/
     width: 230px;
     border: none;
 }
@@ -579,7 +578,7 @@ button:focus {
     background: #2ca6ef;
 }
 .mean-container .mean-nav ul li.dropdown.active a.nav-link.js-scroll-trigger:not a:hover{
-    background: red;
+    /*background: red;*/
 }
 .mean-container .mean-nav ul li.dropdown.active a.nav-link.js-scroll-trigger{
 
@@ -648,7 +647,6 @@ button:focus {
     cursor: pointer;
     width: 50px;
     height: 50px;
-    /*background-color: #3498db;*/
     text-indent: -9999px;
     display: none;
     z-index: 10;
@@ -664,10 +662,6 @@ button:focus {
     width: 0;
     border: 8px solid transparent;
     border-bottom-color: #ffffff;
-}
-
-#scroll:hover {
-    /*background-color: rgba(44,166,239,1);*/
 }
 /*-------------------------------------------
             5. Scroll To Top Area End
@@ -730,16 +724,12 @@ button:focus {
 .hero-button-box a.theme-button.btn {
     margin-right: 23px;
 }
-.theme-button{
-
-}
-
 .theme-button i {
     padding-right: 8px;
 }
-/*.hero-button-box .theme-button:first-child {*/
-/*    color: #fff;*/
-/*}*/
+.hero-button-box a > img {
+    border-radius: 5px;
+}
 .hero-button-box .theme-button{
     -webkit-box-shadow: 0 6px 15px 0 rgba(44,166,239,.5);
     -moz-box-shadow: 0 6px 15px 0 rgba(44,166,239,.5);
@@ -755,12 +745,8 @@ button:focus {
 .hero-button-box .theme-button:last-child::before {
     background: #f2f6fb;
 }
-
 .hero-button-box .theme-button:last-child:hover::after {
     background: linear-gradient(-150deg, #2ca6ef, #74d7f8);
-}
-.hero-button-box .theme-button:last-child:hover, .hero-button-box .theme-button:first-child:hover {
-
 }
 .hero-button-box .theme-button:last-child:hover{
     color: #fff!important;
@@ -916,10 +902,6 @@ button:focus {
 -------------------------------------------*/
 
 /*---Background Effect Start----*/
-.app-screenshots-slider-area {
-    /*background-image: url("../img/app-screenshot-bg-effect.png");*/
-    /*background-position: bottom;*/
-}
 .background-shape{
     animation-name: bobbingAnim;
     animation-duration: 2s;
@@ -994,8 +976,6 @@ button:focus {
 }
 .app-screenshots-slider-area .owl-item.active.center .item {
     transform: scale(1);
-    /*border: 1px solid red;*/
-    /*transition: .5s;*/
 }
 .screenshots-box {
     margin: 12% 6%;
@@ -1058,9 +1038,9 @@ button:focus {
     margin: 31px 0 70px;
 }
 .get-free-download-wrapper .hero-button-box a {
-    -moz-box-shadow: 0px 18px 21px 0px rgba(0,0,0,.2);
-    -webkit-box-shadow: 0px 18px 21px 0px rgba(0,0,0,.2);
-    box-shadow: 0px 18px 21px 0px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 18px 21px 0 rgba(0,0,0,.2);
+    -webkit-box-shadow: 0 18px 21px 0 rgba(0,0,0,.2);
+    box-shadow: 0 18px 21px 0 rgba(0,0,0,.2);
     display: inline-block;
     border-radius: 12px;
     margin-right: 15px;
@@ -1176,9 +1156,7 @@ button:focus {
     margin-left: 34px;
 }
 #accordion6 .panel {
-    /* margin-bottom: 40px; */
-    /* box-shadow: 0px 0px 23px 2px rgba(0,0,0,.2); */
-    padding: 22px 0px 4px;
+    padding: 22px 0 4px;
     border-bottom: 1px solid #f0eff1;
     background-color: #fff;
 }
@@ -1205,14 +1183,11 @@ button:focus {
     height: 24px;
     line-height: 23px;
     font-size: 14px;
-    /*color: #878c93;*/
     text-align: center;
     position: absolute;
     top: 16px;
     right: 3px;
     transition: all 0.5s ease 0s;
-    /*background-color: #232d39;*/
-    /*border-radius: 50px;*/
 }
 #accordion6 .panel-title a.collapsed:before{ content: "\f067"; }
 #accordion6 .panel-body {
@@ -1282,8 +1257,6 @@ button:focus {
     position: absolute;
     right: 0;
     font-weight: 600;
-    /*border-top-left-radius: 0;*/
-    /*border-bottom-left-radius: 0;*/
     box-shadow: none;
 }
 .subscribe-form-part .theme-button::before, .subscribe-form-part .theme-button::after {
@@ -1333,12 +1306,6 @@ button:focus {
     font-size: 47px;
 }
 .review-content h2 {
-    /*font-size: 30px;*/
-    /*color: #2f5266;*/
-    /*font-weight: bold;*/
-    /*margin: 73px 0;*/
-}
-.review-content h2 {
     font-size: 30px;
     color: #2f5266;
     font-weight: bold;
@@ -1348,7 +1315,6 @@ button:focus {
 }
 .reviews_slide_nav .testi_prev, .reviews_slide_nav .testi_next {
     top: 91%;
-
     width: 70px;
     height: 70px;
     background-color: #fff;
@@ -1383,7 +1349,7 @@ button:focus {
     border: 1px solid #fff;
 }
 .reviews-slider.owl-carousel button.owl-dot.active {
-    box-shadow: 0px 0px 1px 5px #7ec9f5;
+    box-shadow: 0 0 1px 5px #7ec9f5;
     background-color: #fff !important;
 }
 /*Client Logo Slider CSS*/
@@ -1409,7 +1375,7 @@ button:focus {
 .single-blog-post {
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0px 0px 10px 0px #ddd;
+    box-shadow: 0 0 10px 0 #ddd;
     background-color: #fff;
     margin-bottom: 30px;
 }
@@ -1447,7 +1413,6 @@ button:focus {
 }
 .all-blog-posts-area .theme-button {
     margin: 55px auto 0;
-    /*padding: 11px 40px;*/
 }
 
 /*-------------------------------------------
@@ -1505,8 +1470,8 @@ button:focus {
     font-size: 27px;
 }
 .contact-form-wrapper {
-    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,.1);
-    box-shadow: 0px 0px 20px 0px rgba(0,0,0,.1);
+    -webkit-box-shadow: 0 0 20px 0 rgba(0,0,0,.1);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.1);
     padding: 60px 70px 70px;
     position: relative;
     margin-top: 113px;
@@ -1519,12 +1484,6 @@ button:focus {
     font-weight: 600;
     color: #42454f;
 }
-.subm-btn input {
-    /*background: linear-gradient(-150deg, #74d7f8, #2ca6ef);*/
-}
-.subm-btn input {
-    /*padding: 10px 40px 14px;*/
-}
 .sending-gif img {
     height: 50px;
     margin-left: 20px;
@@ -1534,7 +1493,6 @@ button:focus {
 }
 .contact-form-wrapper .theme-button {
     padding: 10px 40px 14px;
-    /*margin-top: 15px;*/
     font-weight: 600;
 }
 .contact-form-wrapper .alert-success {
@@ -1543,9 +1501,9 @@ button:focus {
     color: #fff;
     background-color: #2B542C;
     border-color: #2B542C;
-    border-radius: 0px;
-    -webkit-box-shadow: 5px 5px 0px 0px #2B542C;
-    box-shadow: 5px 5px 0px 0px #2B542C;
+    border-radius: 0;
+    -webkit-box-shadow: 5px 5px 0 0 #2B542C;
+    box-shadow: 5px 5px 0 0 #2B542C;
 }
 .google-map iframe {
     width: 100%;
@@ -1607,16 +1565,13 @@ header.page-banner-area .header-caption-heading {
     padding: 0;
 }
 .breadcrumb li.breadcrumb-item{
-    /*color: #ed553b;*/
     font-size: 18px;
 }
 .breadcrumb-item.active {
     color: #fff;
 }
 .breadcrumb-item + .breadcrumb-item::before {
-    /*padding: 0 15px;*/
-    /*color: #fff;*/
-    /*content: "";*/
+    content: "";
 }
 .breadcrumb-item + .breadcrumb-item {
     padding-left: 0;
@@ -1674,9 +1629,6 @@ header.page-banner-area .header-caption-heading {
   .blog-page-area .card-footer .author-box a > span {
       padding-left: 14px;
   }
-  .blog-page-area .card-footer-share a {
-      /*padding-left: 9px;*/
-  }
 
   /*Blog Thumb Pagination-----*/
 .pagination-area {
@@ -1729,7 +1681,6 @@ header.page-banner-area .header-caption-heading {
     18. Blog Details Page Style Start
 -------------------------------------------*/
 .single-blog-banner-area{
-    /*background-image: url(../img/blog-img/single-blog-page-banner-bg.jpg);*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1891,7 +1842,6 @@ header.page-banner-area .header-caption-heading {
     background-color: #eeeff0;
 }
 .widget-search .form-inline {
-    /*border: 1px solid none;*/
     width: 100%;
     background-color: #eeeff0;
 }
@@ -1924,7 +1874,6 @@ header.page-banner-area .header-caption-heading {
   /*Widget Categories*/
 .widget-categories ul li a {
     display: block;
-    /*padding: 7px 0;*/
     text-transform: capitalize;
 }
 .widget-categories ul li a span.cat-number{
@@ -1946,9 +1895,6 @@ header.page-banner-area .header-caption-heading {
   }
 
   /*Widget Recent Post*/
-.widget-recent-posts ul li a {
-    /*padding: 5px 0;*/
-}
   .widget-recent-posts ul li:first-child a, .widget-categories ul li:first-child a {
       padding-top: 0;
   }
@@ -2011,9 +1957,6 @@ header.page-banner-area .header-caption-heading {
 .home-2 #mainNav .navbar-nav .nav-item .nav-link:hover, .home-2 #mainNav .navbar-nav .nav-item .nav-link.active {
     color: #e91fa2 !important;
 }
-.home-2 #mainNav .navbar-nav .dropdown-menu a:hover{
-    /*background-color: #39318d;*/
-}
 .home-2 #mainNav .navbar-nav .nav-item:last-child .nav-link:hover, .home-5 .hero-area-content p {
     color: #fff !important;
 }
@@ -2033,8 +1976,15 @@ header.page-banner-area .header-caption-heading {
     justify-content: space-around;
     height: 100%;
 }
+.home-3 .home-banner-area-3 .hero-right-bg, .home-banner-area-2.home-banner-area-4 .hero-right-bg{
+    box-shadow: none;
+}
 .home-banner-area-2 .hero-right-bg, .home-5 .hero-right-bg {
     position: relative;
+    border-radius: 47px;
+}
+.home-banner-area-2 .hero-right-bg {
+    box-shadow: 0 14px 50px 12px rgba(0,0,0,.2);
 }
 .hero-right-wrapper, .home-5 .hero-right-wrapper {
     align-items: center;
@@ -2052,7 +2002,7 @@ header.page-banner-area .header-caption-heading {
 .home-banner-area-2 .hero-button-box .theme-button:first-child, .home-banner-area-2 .hero-button-box .theme-button:last-child{
     background: #f2f6fb;
     color: #3b328e !important;
-    box-shadow: 0px 3px 9px 4px rgba(64,55,147,.2);
+    box-shadow: 0 3px 9px 4px rgba(64,55,147,.2);
 }
 .home-banner-area-2 .hero-button-box .theme-button:first-child:hover, .home-banner-area-2 .hero-button-box .theme-button:last-child:hover{
     color: #e91fa2 !important;
@@ -2071,7 +2021,7 @@ header.page-banner-area .header-caption-heading {
 /*------ App Screenshots Area --------*/
 .home-2 .owl-dot.active {
     background-color: #3b328e !important;
-    box-shadow: 0px 0px 0px 6px rgba(59,50,142,.2);
+    box-shadow: 0 0 0 6px rgba(59,50,142,.2);
 }
 /*-------- About Section CSS --------*/
 .home-2 .about-wrapper {
@@ -2091,7 +2041,7 @@ header.page-banner-area .header-caption-heading {
     right: -15px;
 }
 .about-left-side img {
-    box-shadow: 0 10px 23px 0px rgba(0,0,0,.2);
+    box-shadow: 0 10px 23px 0 rgba(0,0,0,.2);
     border-radius: 25px;
 }
 .home-2 .about-left-side::before {
@@ -2280,8 +2230,6 @@ header.page-banner-area .header-caption-heading {
 .review-comment-box img {
     animation: zoomIn;
     animation-duration: .5s;
-    /*height: 108px;*/
-    /*width: 108px;*/
 }
 .review-comment-box h5 {
     color: #203041;
@@ -2344,7 +2292,6 @@ h5.small-heading span {
 }
 .home-3 #mainNav .navbar-nav .dropdown-menu a:hover{
     background-color: #8e26f9;
-    /*background-color: linear-gradient(-150deg, #ff1d8d ,#8e26f9);*/
 }
 
 /*------Hero Area CSS-----*/
@@ -2389,7 +2336,6 @@ h5.small-heading span {
     margin: 29px 0 0;
 }
 .about-area-3 .about-wrapper {
-    /*display: flex;*/
     margin: 0;
 }
 .about-area-3 .about-right-side {
@@ -2461,7 +2407,7 @@ h5.small-heading span {
     height: 130px;
     border-radius: 20px;
     align-items: center;
-    box-shadow: 0px 2px 32px 12px rgba(238,19,159,.2);
+    box-shadow: 0 2px 32px 12px rgba(238,19,159,.2);
 }
 .how-it-works-area-3 .how-it-works-box h3 {
     margin: 40px 0 25px;
@@ -2481,7 +2427,7 @@ h5.small-heading span {
 }
 .app-screenshots-slider-area-3 .owl-dot.active {
     background-color: #fb238e!important;
-    box-shadow: 0px 0px 0px 6px rgba(255,29,141,.2);
+    box-shadow: 0 0 0 6px rgba(255,29,141,.2);
 }
 /*------Review Slider Area CSS-------*/
 .reviews_slide_nav_3 .testi_prev, .reviews_slide_nav_3 .testi_next{
@@ -2489,7 +2435,7 @@ h5.small-heading span {
 }
 .reviews-slider-3 .owl-dot.active {
     background-color: #e91fa2 !important;
-    box-shadow: 0px 0px 0px 6px rgba(233,31,162,.2);
+    box-shadow: 0 0 0 6px rgba(233,31,162,.2);
 }
 /*------Team Area CSS-------*/
 .team-area{
@@ -2528,16 +2474,12 @@ h5.small-heading span {
     padding: 0 0 20px 20px;
     background: linear-gradient(-150deg, #ff1d8d, #8e26f9);
     border-radius: 10px;
-    /* position: relative; */
     opacity: 0;
     transition: .7s;
 }
 .team-content:hover{
     background: linear-gradient(-150deg, #ff1d8d, #8e26f9);
     opacity: 1;
-}
-.team-content:hover {
-    /*background: linear-gradient(-150deg, #ff1d8d, #8e26f9);*/
 }
 .team-content h4 {
     border-left: 2px solid #ff1d8d;
@@ -2554,7 +2496,6 @@ h5.small-heading span {
     display: inline-block;
     padding: 0 5px;
 }
-
 /*------FAQ 3 Area CSS-------*/
 .faq-area-3 {
     padding: 70px 0 100px;
@@ -2570,9 +2511,6 @@ h5.small-heading span {
     color: #fb238e!important;
 }
 /*------Contact 3 Area CSS-------*/
-.contact-area-3 .subm-btn input.theme-button{
-    /*background: #ff1d8d;*/
-}
 .contact-area-3 .contact-form-address-wrapper {
     top: -159px;
     position: relative;
@@ -2618,9 +2556,10 @@ h5.small-heading span {
 /*------------------------------------------
        Home Version 4 Page CSS Start
 -------------------------------------------*/
+
 /*-------Home Version 4 Theme Button CSS-------*/
+
 .home-4 .theme-button::before {
-    /*background: #fe9f9f;*/
     background: linear-gradient(-150deg, #f6cdbd, #fe9f9f);
 }
 .home-4 .theme-button::after {
@@ -2669,7 +2608,6 @@ h5.small-heading span {
 }
 .home-4 .hero-button-box .theme-button:first-child:hover, .home-4 .hero-button-box .theme-button:last-child:hover {
     background: #fe9f9f;
-    /*border: 1px solid #fbe3e3;*/
     color: #42454f !important;
 }
 /*------About Area CSS------*/
@@ -2692,8 +2630,7 @@ h5.small-heading span {
     color: #42454f;
 }
 .home-4 .screenshots-slider-wrapper .owl-dot.active, .home-4 .reviews-slider-wrapper-4 .owl-dot.active {
-    /*background-color: #fe9f9f!important;*/
-    box-shadow: 0px 0px 0px 6px rgba(254,159,159,.2);
+    box-shadow: 0 0 0 6px rgba(254,159,159,.2);
 }
 /*-----Review Area CSS-----*/
 .home-4 .review-area-4 , .home-3 .review-area-3 {
@@ -2745,7 +2682,7 @@ h5.small-heading span {
     padding-top: 30px;
 }
 .faq-area #accordion6 .panel {
-    padding: 0 0px 4px 20px;
+    padding: 0 0 4px 20px;
     border-bottom: none;
     border-left: 1px solid #e3e5ea;
 }
@@ -2808,6 +2745,9 @@ h5.small-heading span {
 }
 .home-5 p.section-subheading {
     margin: 31px 0 50px;
+}
+.home-5 .all-blog-posts-area .section-subheading {
+    margin: 18px auto 50px;
 }
 .home-4 .all-section-after::after, .home-4 .about-area::after, .home-4 .subscribe-area::after, .home-4 .reviews-area::after, .home-4 .contact-area::after, .home-4 #features::after,
 .home-5 .all-section-after::after, .home-5 .about-area::after, .home-5 .subscribe-area::after, .home-5 .reviews-area::after, .home-5 .contact-area::after, .home-5 #features::after,
@@ -2897,6 +2837,9 @@ h5.small-heading span {
     display: block;
     text-transform: uppercase;
 }
+.home-5 .hero-button-box > a {
+    box-shadow: 0 18px 21px 0 rgba(0,0,0,.2);
+}
 .home-5 .hero-button-box a:last-child {
     margin-left: 15px;
 }
@@ -2913,7 +2856,7 @@ h5.small-heading span {
 }
 /*---- About Area CSS -----*/
 .home-5 .about-area .about-right-side .section-bubble-effect {
-    left: 0%;
+    left: 0;
 }
 .home-5 .about-wrapper {
     margin: 0 0;
@@ -2996,7 +2939,7 @@ h5.small-heading span {
     color: #e1eef6;
 }
 .home-5 .reviews-slider.owl-carousel button.owl-dot.active {
-    box-shadow: 0px 0px 1px 5px #ff1d8d;
+    box-shadow: 0 0 1px 5px #ff1d8d;
 }
 .home-5 .reviews-slider-wrapper .section-title-area {
     margin-bottom: 0;
@@ -3036,10 +2979,6 @@ h5.small-heading span {
 .home-5 .app-screenshots-slider-area .owl-item.active.center .item {
     background-image: none;
 }
-
-.home-5 .app-screenshots-slider-area .owl-dots {
-    /*display: none !important;*/
-}
 .home-5 .screenshots_slide_nav{
     display: none;
 }
@@ -3049,7 +2988,7 @@ h5.small-heading span {
 }
 .home-5 .owl-dot.active {
     background-color: #522ac5 !important;
-    box-shadow: 0px 0px 0px 6px rgba(82,42,197,.2);
+    box-shadow: 0 0 0 6px rgba(82,42,197,.2);
 }
 .home-5 #scroll {
     background: linear-gradient(-150deg, #774cf2, #522ac5);
@@ -3083,9 +3022,6 @@ h5.small-heading span {
 .home-5 .contact-form-wrapper {
     margin-top: -174px;
 }
-/*.home-5 .contact-address ul li:nth-child(1) span i, .home-5 .contact-address ul li:nth-child(2) span i, .home-5 .contact-address ul li:nth-child(3) span i{*/
-/*    color: #f658bc;*/
-/*}*/
 .home-5 .contact-form-wrapper .form-control {
     background-color: #f1edfa;
 }
@@ -3107,7 +3043,6 @@ h5.small-heading span {
 /*------------------------------------------
        Home Version 5 Page CSS End
 -------------------------------------------*/
-
 
 /*-------------------------------------------
     19. Responsive Design CSS
@@ -3200,11 +3135,9 @@ h5.small-heading span {
     }
     .review-from-client-slider .nav-tabs a.nav-link:nth-child(3) {
         left: 250px;
-        /*top: 120px;*/
     }
     .review-from-client-slider .nav-tabs a.nav-link:nth-child(4) {
         right: 250px;
-        /*top: 122px;*/
     }
     /*============= Home 3 Responsive CSS ==============*/
     .reviews_slide_nav_4 .testi_prev, .reviews_slide_nav_4 .testi_next {
@@ -3223,19 +3156,14 @@ h5.small-heading span {
 /*--------Max 1200px Width Screen---------*/
 
   @media only screen and (max-width: 1200px) {
-      .app-screenshots-slider-area .owl-item.active.center .item img {
-          /*max-height: 451px;*/
-      }
       .app-screenshots-slider-area .testi_next {
           right: 12%;
       }
       .review-from-client-slider .nav-tabs a.nav-link:nth-child(4) {
           right: 240px;
-          /*top: 122px;*/
       }
       .review-from-client-slider .nav-tabs a.nav-link:nth-child(3) {
           left: 240px;
-          /*top: 120px;*/
       }
       /*============= Home 3 Responsive CSS ==============*/
       .reviews_slide_nav_4 .testi_prev, .reviews_slide_nav_4 .testi_next {
@@ -3286,7 +3214,6 @@ h5.small-heading span {
         border-bottom-right-radius: 18px;
     }
     .app-screenshots-slider-area .owl-carousel .owl-item img {
-        /*display: block;*/
         width: 100%;
     }
     .home-5 .app-screenshots-slider-area .owl-item.active.center .item img {
@@ -3349,9 +3276,7 @@ h5.small-heading span {
     }
     /*============= Home 5 Responsive CSS ==============*/
     .home-5 .app-screenshots-slider-area .section-title-area {
-        /*flex-direction: column;*/
         margin: 25px auto;
-        /*padding: 0;*/
         width: 38%;
         float: none;
     }
@@ -3434,9 +3359,6 @@ h5.small-heading span {
       section {
           padding: 50px 0;
       }
-      .features-1-area {
-          /*padding: 50px 0 0;*/
-      }
       .features-1-area.features-2-area {
           padding: 50px 0;
       }
@@ -3505,12 +3427,6 @@ h5.small-heading span {
       .hero-area-content {
           width: 50%;
       }
-      /*.app-screenshots-slider-area .owl-item.active.center .item .screenshots-box {*/
-      /*    padding: 20px 15px 0;*/
-      /*}*/
-      /*.app-screenshots-slider-area .owl-item.active.center .item img {*/
-      /*    height: 438px;*/
-      /*}*/
       .free-download-mobile-mockup img {
           border-radius: 25px;
           height: 370px;
@@ -3569,7 +3485,6 @@ h5.small-heading span {
           height: 336px;
       }
       .app-screenshots-slider-area .owl-carousel .owl-item img {
-          /*display: block;*/
           width: 100%;
       }
       .home-5 .app-screenshots-slider-area .owl-item.active.center .item img {
@@ -3587,27 +3502,21 @@ h5.small-heading span {
       }
       .review-from-client-slider .nav-tabs a.nav-link:nth-child(1) {
           left: 112px;
-          /*bottom: 48px;*/
       }
       .review-from-client-slider .nav-tabs a.nav-link:nth-child(2) {
           left: 20px;
-          /*top: 260px;*/
       }
       .review-from-client-slider .nav-tabs a.nav-link:nth-child(3) {
           left: 62px;
-          /*top: 120px;*/
       }
       .review-from-client-slider .nav-tabs a.nav-link:nth-child(4) {
           right: 75px;
-          /*top: 122px;*/
       }
       .review-from-client-slider .nav-tabs a.nav-link:nth-child(5) {
           right: 0;
-          /*top: 223px;*/
       }
       .review-from-client-slider .nav-tabs a.nav-link:nth-child(6) {
           right: 100px;
-          /*bottom: 30px;*/
       }
       .review-content {
           text-align: center;
@@ -3839,15 +3748,10 @@ h5.small-heading span {
           height: 350px;
       }
       .home-2 .about-left-side::before , .home-4 .about-left-side::before {
-          /*height: 407px;*/
           width: 274px;
-          /*right: -7px;*/
           top: -87px;
       }
       .home-2 .home-2-about-float-img {
-          /*position: relative;*/
-          /*top: -213px;*/
-          /*right: -15px;*/
           height: 190px;
       }
       .home-2 .single-features-1-img::after {
@@ -3890,7 +3794,7 @@ h5.small-heading span {
       }
       .app-screenshots-slider-area .owl-item.active.center .item img {
           height: 483px;
-          padding: 1px 0px 7px 17px;
+          padding: 1px 0 7px 17px;
           width: 244px;
           margin: 0 auto;
           border-bottom-left-radius: 35px !important;
@@ -4005,10 +3909,6 @@ h5.small-heading span {
     .app-screenshots-slider-area .item img {
         height: 440px;
     }
-    /*.app-screenshots-slider-area .owl-item.active.center .item img {*/
-    /*    height: 440px;*/
-    /*    padding: 6px 5px 4px;*/
-    /*}*/
 
 }
 
@@ -4039,7 +3939,6 @@ h5.small-heading span {
           margin-top: 56px;
       }
       .section-title-area {
-          /*margin-bottom: 0;*/
           text-align: center;
       }
       .play-button {
@@ -4062,12 +3961,6 @@ h5.small-heading span {
           width: 64%;
           margin-top: 30px;
       }
-      /*.app-screenshots-slider-area .owl-item.active.center .item {*/
-      /*    transform: scale(.8);*/
-      /*}*/
-      /*.app-screenshots-slider-area .owl-item.active.center .item img {*/
-      /*    height: 400px;*/
-      /*}*/
       .get-free-download-area .get-free-download-wrapper {
           flex-direction: column;
       }
@@ -4154,7 +4047,6 @@ h5.small-heading span {
       }
       .all-blog-posts-area .theme-button {
           margin: 20px auto 0;
-          /*line-height: 12px;*/
       }
       .contact-area {
           padding: 50px 0 0;
@@ -4375,7 +4267,6 @@ h5.small-heading span {
         padding-bottom: 20px;
     }
     .app-screenshots-slider-area .owl-item.active.center .item img {
-        /*height: 470px;*/
         width: auto;
         margin: 0 auto;
     }
@@ -4631,7 +4522,6 @@ h5.small-heading span {
           max-width: 90%;
       }
       .single-blog-post a img {
-          /*height: 237px;*/
           width: 100%;
       }
       .single-blog-content h6 {
@@ -4640,9 +4530,6 @@ h5.small-heading span {
       }
       .contact-form-wrapper {
           padding: 24px;
-      }
-      .contact-form-wrapper .form-control {
-          /*height: 37px;*/
       }
       .contact-form-wrapper form label {
           font-size: 15px;
@@ -4670,7 +4557,7 @@ h5.small-heading span {
           top: 98%;
       }
       .app-screenshots-slider-area .owl-item.active.center .item img {
-          padding: 2px 0px 8px 11px;
+          padding: 2px 0 8px 11px;
       }
       .app-screenshots-slider-area .screenshots-box {
           margin: 12% 6%;
