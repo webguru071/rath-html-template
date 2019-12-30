@@ -23,11 +23,27 @@
   2. Typography CSS
   3. Button CSS
   4. Navbar CSS
-  5. Header CSS
-
-  17. Blog Page
-  18. Blog Details Page CSS
-  19. Responsive Design CSS
+  5.Scroll To Top Area
+  5.Preloader Area Start
+  7. Header Area
+  8. About Area
+  9. Video Area
+  10. App Screenshots Area
+  11. Get Free Download
+  12. Features 1 Area
+  13. Features 2 Area
+  14. Subscribe Area
+  15.Reviews Area
+  16. Home Blog Posts
+  17. Contact Area
+  18.Footer Area/Copyright Area
+  19.Blog Page
+  20.Blog Details Page
+  21. Home Version 2
+  22. Home Version 3 Page
+  23. Home Version 4 Page
+  24. Home Version 5 Page
+  25. Responsive CSS
 
 ------------------------------------------------ */
 
@@ -53,7 +69,6 @@ body {
     background: #fff none repeat scroll;
     font-size: 16px;
     font-weight: normal;
-    /*overflow-x: hidden;*/
     font-family: 'Lato', sans-serif;
     color: #777c87;
     letter-spacing: 0.05em;
@@ -70,7 +85,6 @@ a {
   color: #101127;
 }
 a:hover {
-    /*color: #ff4061;*/
 }
 /* Theme All Transitions
 ------------------------------- */
@@ -160,7 +174,7 @@ figure {
 /*--------------------------------
             2.1 Theme Color
 -----------------------------------*/
-.bg-white{
+.bg-white, .copyright-area{
     background-color: #fff;
 }
 .color-white, .home-banner-area-2 .hero-area-content h1, .home-5 .hero-area-content h1, .home-5 .contact-form-area h2.section-heading, .home-5 .contact-form-area .contact-address ul li, .home-5 .copyright-text p, .home-5 .terms-policy ul li a,
@@ -275,13 +289,6 @@ figure {
 }
 
 /*----- Blog Page Bg/Color CSS -----*/
-
-/*.blog-page-secondary-color, .share-box i, #content .share-box a:hover, #content .author-social a:hover, .widget-categories ul li a:hover, .widget-recent-posts ul li a p:hover{*/
-/*    color: #7086f8;*/
-/*}*/
-/*.blog-page-secondary-bg-color, .widget-popular-tags ul li a:hover{*/
-/*    background-color: #7086f8;*/
-/*}*/
 .blog-sidebar-color, .widget ul li a, .widget-categories ul li a{
     color: #4f535b;
 }
@@ -317,7 +324,6 @@ figure {
 /*----Template Main Section ----*/
 h2.section-heading {
     font-size: 40px;
-    /*line-height: 37px;*/
     font-weight: 600;
 }
 
@@ -325,7 +331,6 @@ section{
     padding: 100px 0;
     position: relative;
     z-index: 9;
-    /*overflow: hidden;*/
 }
 .section-overlay{
     height: 100%;
@@ -335,7 +340,8 @@ section{
     background-color: rgba(0,0,0,.1);
 }
 
-.all-section-after::after, .about-area::after, .subscribe-area::after, .reviews-area:after, .contact-area:after, #features::after {
+.all-section-after::after, .about-area::after, .subscribe-area::after, .reviews-area:after, .contact-area:after, #features::after,
+.home-4 #faq::after{
     font-family: 'Nunito', sans-serif;
     position: absolute;
     color: #f7f5f8;
@@ -378,7 +384,6 @@ button{
 }
 button:focus {
     outline: 0;
-    /*outline: 0 auto -webkit-focus-ring-color;*/
 }
 /*Slider Default Button CSS*/
   .testi_prev, .testi_next {
@@ -414,10 +419,8 @@ button:focus {
 .theme-button {
     position: relative;
     color: #ffffff !important;
-    /*font-size: 18px;*/
     display: inline-block;
     cursor: pointer;
-    /*margin-top: 10px;*/
     transition: all 0.7s ease 0s;
     outline: none;
     text-transform: capitalize;
@@ -631,7 +634,7 @@ button:focus {
 -------------------------------------------*/
 
 /*-------------------------------------------
-            5. Preloader Area Start
+            6. Preloader Area Start
 -------------------------------------------*/
 #preloader {
     position: fixed;
@@ -655,11 +658,11 @@ button:focus {
     margin: -100px 0 0 -100px;
 }
 /*-------------------------------------------
-            5. Preloader Area End
+            6. Preloader Area End
 -------------------------------------------*/
 
 /*-------------------------------------------
-            5. Header Area
+            7. Header Area
 -------------------------------------------*/
 .home-banner-area{
     background-image: url('../img/hero-banner-bg.png');
@@ -725,11 +728,11 @@ button:focus {
 @keyframes spin { 100% { transform:rotate(360deg); } }
 
 /*-------------------------------------------
-            5. Header Area End
+            7. Header Area End
 -------------------------------------------*/
 
 /*-------------------------------------------
-    6. About Area Start
+    8. About Area Start
 -------------------------------------------*/
 .about-area{
     background-color: #fff;
@@ -747,6 +750,9 @@ button:focus {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.about-right-side .section-title-area {
+    margin-bottom: 0;
 }
 .about-right-side p.section-subheading {
     margin: 29px 0 80px;
@@ -780,11 +786,11 @@ button:focus {
     margin-top: 35px;
 }
 /*-------------------------------------------
-    6. About Area End
+    8. About Area End
 -------------------------------------------*/
 
 /*-------------------------------------------
-    7. Video Area Start
+    9. Video Area Start
 -------------------------------------------*/
 .video-area{
     background-image: url("../img/video-area-bg.png");
@@ -851,11 +857,11 @@ button:focus {
     font-size: 22px;
 }
 /*-------------------------------------------
-    7. Video Area End
+    9. Video Area End
 -------------------------------------------*/
 
 /*-------------------------------------------
-    8. App Screenshots Area Start
+    10. App Screenshots Area Start
 -------------------------------------------*/
 
 /*---Background Effect Start----*/
@@ -908,7 +914,6 @@ button:focus {
     background-repeat: no-repeat;
     background-size: inherit;
     background-position: center;
-    /*transition: .5s;*/
     padding: 5px 0;
 }
 .app-screenshots-slider-area .owl-item.active.center .item {
@@ -923,6 +928,7 @@ button:focus {
 }
 .app-screenshots-slider-area .item img {
     border-radius: 30px;
+    border: 1px solid rgba(0,0,0,.2);
 }
 .app-screenshots-slider-area .owl-item.active.center .item img {
     min-height: 100%;
@@ -954,15 +960,12 @@ button:focus {
     margin-left: 10%;
 }
 /*-------------------------------------------
-    8. App Screenshots Area End
+    10. App Screenshots Area End
 -------------------------------------------*/
 
 /*-------------------------------------------
-    9. Get Free Download Area Start
+    11. Get Free Download Area Start
 -------------------------------------------*/
-.get-free-download-area {
-/*background-color: #f1faff;*/
-}
 .get-free-download-area .get-free-download-wrapper {
     display: flex;
     justify-content: space-between;
@@ -989,14 +992,14 @@ button:focus {
     margin: 68px 0 0 27px;
 }
 /*-------------------------------------------
-        9. Get Free Download Area End
+        11. Get Free Download Area End
 -------------------------------------------*/
 
 /*-------------------------------------------
-    10. Features 1 Area Start
+    12. Features 1 Area Start
 -------------------------------------------*/
-.features-1-area {
-    padding: 57px 0;
+.home-1 .features-2-area {
+    padding-top: 0;
 }
 .features-1-wrapper {
     display: flex;
@@ -1004,7 +1007,7 @@ button:focus {
     align-items: center;
 }
 .single-features-1-box {
-    width: 66%;
+    width: 68%;
     display: flex;
     margin: 75px 0;
     align-items: center;
@@ -1055,11 +1058,11 @@ button:focus {
 }
 
 /*-------------------------------------------
-        10. Features 1 Area End
+        12. Features 1 Area End
 -------------------------------------------*/
 
 /*-------------------------------------------
-        11. Features 2 Area Start
+        13. Features 2 Area Start
 -------------------------------------------*/
 .features-2-area {
     padding: 100px 0;
@@ -1087,12 +1090,12 @@ button:focus {
     margin-left: 34px;
 }
 #accordion6 .panel {
-    padding: 22px 0 4px;
+    padding: 22px 0 4px 20px;
     border-bottom: 1px solid #f0eff1;
     background-color: #fff;
+    box-shadow: -13px 0px 33px -7px rgba(0,0,0,.1);
 }
 .panel-collapse {
-    box-shadow: -4px -5px 16px -1px rgba(0,0,0,.1);
     padding: 16px 17px 16px 35px;
 }
 #accordion6 .panel-title a{
@@ -1147,11 +1150,11 @@ button:focus {
 }
 /*Accordion Area-----------*/
 /*-------------------------------------------
-        11. Features 2 Area End
+        13. Features 2 Area End
 -------------------------------------------*/
 
 /*-------------------------------------------
-    12. Subscribe Area Start
+    14. Subscribe Area Start
 -------------------------------------------*/
 .subscribe-area::after {
     content: "Subscribe";
@@ -1195,11 +1198,11 @@ button:focus {
     border-bottom-left-radius: 0;
 }
 /*-------------------------------------------
-        12. Subscribe Area End
+        14. Subscribe Area End
 -------------------------------------------*/
 
 /*-------------------------------------------
-    14. Reviews Area Start
+    15. Reviews Area Start
 -------------------------------------------*/
 .reviews-area {
     background-image: url("../img/reviews-bg-line-img.png");
@@ -1286,11 +1289,11 @@ button:focus {
 /*Client Logo Slider CSS*/
 
 /*-------------------------------------------
-    14. Reviews Area End
+    15. Reviews Area End
 -------------------------------------------*/
 
 /*-------------------------------------------
-    15. Home Blog Posts Area Start
+    16. Home Blog Posts Area Start
 -------------------------------------------*/
 .all-blog-posts-area {
     padding: 100px 0;
@@ -1347,11 +1350,11 @@ button:focus {
 }
 
 /*-------------------------------------------
-    15. Home Blog Posts Area End
+    16. Home Blog Posts Area End
 -------------------------------------------*/
 
 /*-------------------------------------------
-    16. Contact Area Start
+    17. Contact Area Start
 -------------------------------------------*/
 .contact-area{
     padding: 100px 0 0;
@@ -1442,18 +1445,16 @@ button:focus {
 .google-map {
     margin-top: -21%;
 }
-
-
 /*-------------------------------------------
-    16. Contact Area Start
+    17. Contact Area Start
 -------------------------------------------*/
 
 /*
 -------------------------------------------
-    16. Footer Area/Copyright Area
+    18. Footer Area/Copyright Area
 -------------------------------------------*/
 .copyright-area {
-    padding: 38px 0 38px 0;
+    padding: 22px 0
 }
 .copyright-text p, .terms-policy ul li a{
     font-size: 16px;
@@ -1471,11 +1472,11 @@ button:focus {
     margin-right: 20px;
 }
 /*-------------------------------------------
-    16. Footer Area/Copyright Area End
+    18. Footer Area/Copyright Area End
 -------------------------------------------*/
 
 /*-------------------------------------------
-    17. Blog Page Style Start
+    19. Blog Page Style Start
 -------------------------------------------*/
 /*--------Breadcrumb Area CSS--------*/
 header.page-banner-area {
@@ -1602,11 +1603,11 @@ header.page-banner-area .header-caption-heading {
     margin-top: 30px;
 }
 /*-------------------------------------------
-        17. Blog Page Style End
+        19. Blog Page Style End
 -------------------------------------------*/
 
 /*-------------------------------------------
-    18. Blog Details Page Style Start
+    20. Blog Details Page Style Start
 -------------------------------------------*/
 .single-blog-banner-area{
     background-repeat: no-repeat;
@@ -1865,11 +1866,11 @@ header.page-banner-area .header-caption-heading {
     margin-right: 8px;
 }
 /*-------------------------------------------
-    18. Blog Details Page Style End
+    20. Blog Details Page Style End
 -------------------------------------------*/
 
 /*------------------------------------------
-       Home Version 2 Page CSS Start
+       21. Home Version 2 Page CSS Start
 -------------------------------------------*/
 
 /*-------- Home Version 2 Default CSS ---------*/
@@ -2013,6 +2014,7 @@ header.page-banner-area .header-caption-heading {
 }
 .home-2 .single-features-1-box {
     flex-direction: row-reverse;
+    margin: 40px 0;
 }
 .home-2 .features-1-all-box .single-features-1-box:nth-child(2) {
     margin-left: 0;
@@ -2176,13 +2178,24 @@ header.page-banner-area .header-caption-heading {
     align-items: center;
 }
 /*------------------------------------------
-       Home Version 2 Page CSS End
+       21. Home Version 2 Page CSS End
 -------------------------------------------*/
 
 /*------------------------------------------
-       Home Version 3 Page CSS Start
+      22. Home Version 3 Page CSS Start
 -------------------------------------------*/
 /*------Home 3 Default CSS-----*/
+.home-3 .theme-button,.home-3 .theme-button::before, .home-3 .theme-button::after, .home-3 .subscribe-form-part #newsletter_email{
+    border-radius: 5px;
+}
+.home-3 .subscribe-form-part .theme-button,.home-3 .subscribe-form-part .theme-button::after,.home-3 .subscribe-form-part .theme-button::before{
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+.home-3 .contact-form-wrapper .theme-button {
+    width: 100%;
+    text-align: center;
+}
 .home-3 .theme-button::before, .contact-area-3 .subm-btn input.theme-button::before{
     background: linear-gradient(-150deg, #ff1d8d ,#8e26f9);
 }
@@ -2474,15 +2487,21 @@ h5.small-heading span {
 }
 
 /*------------------------------------------
-       Home Version 3 Page CSS End
+       22. Home Version 3 Page CSS End
 -------------------------------------------*/
 
 /*------------------------------------------
-       Home Version 4 Page CSS Start
+       23. Home Version 4 Page CSS Start
 -------------------------------------------*/
 
 /*-------Home Version 4 Theme Button CSS-------*/
-
+.home-4 #about::after, .home-4 #features::after, .home-4 .contact-area::after{
+    display: block;
+}
+.home-4 #faq::after {
+    content: "FAQ";
+    top: -30px;
+}
 .home-4 .theme-button::before {
     background: linear-gradient(-150deg, #f6cdbd, #fe9f9f);
 }
@@ -2549,6 +2568,7 @@ h5.small-heading span {
     background-image: url('../img/home-4-img/app-screenshot-bg.jpg');
     background-repeat: no-repeat;
     background-position: top center;
+    border-bottom: 1px solid #eaeaea;
 }
 .home-4 .app-screenshots-slider-area .section-subheading {
     color: #42454f;
@@ -2561,6 +2581,9 @@ h5.small-heading span {
     background-image: url('../img/home-4-img/review-slider-img/review-slider-4-bg.png');
     background-repeat: no-repeat;
     background-position: center;
+}
+.home-4 .review-area-4 {
+    padding: 90px 0 75px;
 }
 .reviews-slider-wrapper-4 {
     margin-bottom: 30px;
@@ -2609,6 +2632,7 @@ h5.small-heading span {
     padding: 0 0 4px 20px;
     border-bottom: none;
     border-left: 1px solid #e3e5ea;
+    box-shadow: none;
 }
 .faq-area #accordion6 .panel-title{
     position: relative;
@@ -2622,6 +2646,18 @@ h5.small-heading span {
     left: -27px;
     border-radius: 50%;
     top: 4px;
+}
+.home-4 .faq-area #accordion6 div.col-12:nth-child(1) .panel:nth-child(1) .panel-title::before {
+    background: #8aebf1;
+}
+.home-4 .faq-area #accordion6 div.col-12:nth-child(1) .panel:nth-child(2) .panel-title::before {
+    background: #8af1b3;
+}
+.home-4 .faq-area #accordion6 div.col-12:nth-child(2) .panel:nth-child(1) .panel-title::before {
+    /*background: blue;*/
+}
+.home-4 .faq-area #accordion6 div.col-12:nth-child(2) .panel:nth-child(2) .panel-title::before {
+    background: #847cf3;
 }
 .faq-area .panel-collapse {
     box-shadow: none;
@@ -2644,11 +2680,11 @@ h5.small-heading span {
 }
 
 /*------------------------------------------
-       Home Version 4 Page CSS End
+      23. Home Version 4 Page CSS End
 -------------------------------------------*/
 
 /*------------------------------------------
-       Home Version 5 Page CSS Start
+       24. Home Version 5 Page CSS Start
 -------------------------------------------*/
 
 /*--------- Home Version 5 Default CSS ---------*/
@@ -2882,26 +2918,19 @@ h5.small-heading span {
     top: 42%;
 }
 /*-------- App Screenshots Area CSS --------*/
-
+.home-5 .app-screenshots-slider-area .owl-item .item .screenshots-box {
+    margin: 16% 6%;
+}
 .home-5 .app-screenshots-slider-area .owl-item.active.center .item .screenshots-box {
-    margin: 4% 5%;
-    padding: 0;
-}
-.home-5 .app-screenshots-slider-area .owl-item.active.center .item img {
-    height: 470px;
-}
-.home-5 .app-screenshots-slider-area .item img , .home-5 .app-screenshots-slider-area .owl-item.active.center .item img{
-    border-radius: 0!important;
+    margin: 0 0;
+    /*padding: 0;*/
+    padding: 26px 8px 0 9px;
 }
 .home-5 .app-screenshots-slider-area .owl-item .item {
     transform: scale(1);
 }
 .home-5 .app-screenshots-slider-area .owl-item.active.center .item{
     transform: scale(1);
-}
-
-.home-5 .app-screenshots-slider-area .owl-item.active.center .item {
-    background-image: none;
 }
 .home-5 .screenshots_slide_nav{
     display: none;
@@ -2965,11 +2994,11 @@ h5.small-heading span {
     background-color: #4422a4;
 }
 /*------------------------------------------
-       Home Version 5 Page CSS End
+       24. Home Version 5 Page CSS End
 -------------------------------------------*/
 
 /*-------------------------------------------
-    19. Responsive Design CSS
+    25. Responsive Design CSS
 -------------------------------------------*/
 
 /*=====================================
@@ -3071,7 +3100,14 @@ h5.small-heading span {
         top: 35%;
     }
     .home-5 .app-screenshots-slider-area .owl-item.active.center .item img {
-        height: 327px;
+        height: 369px;
+    }
+    .home-5 .app-screenshots-slider-area .owl-item.active.center .item .screenshots-box {
+        margin: 6% 0;
+        padding: 17px 12px 0;
+    }
+    .home-5 .app-screenshots-slider-area .section-title-area {
+        width: 80%;
     }
 
 }
@@ -3129,6 +3165,9 @@ h5.small-heading span {
     .features-1-area {
         padding: 0 0 0;
     }
+    .home-1 .features-1-area {
+        padding: 50px 0;
+    }
     .app-screenshots-slider-area .owl-item.active.center .item .screenshots-box {
         padding: 24px 11px 9px;
     }
@@ -3143,6 +3182,10 @@ h5.small-heading span {
     .home-5 .app-screenshots-slider-area .owl-item.active.center .item img {
         height: 435px;
     }
+    .home-5 .app-screenshots-slider-area .owl-item.active.center .item .screenshots-box {
+        padding: 21px 13px 8px 12px;
+    }
+
     /*---------Home 3 Responsive CSS--------*/
     .home-3 h5.small-heading {
         display: none;
@@ -3379,7 +3422,7 @@ h5.small-heading span {
           right: 93%;
       }
       .reviews_slide_nav_4 .testi_next {
-          right: 0%;
+          right: 0;
       }
   }
 
@@ -3479,6 +3522,9 @@ h5.small-heading span {
       }
       .blog-media-box::before {
           left: 37%;
+      }
+      .home-5 .app-screenshots-slider-area .owl-item .item .screenshots-box {
+          margin: 0;
       }
 
   }
@@ -3819,8 +3865,10 @@ h5.small-heading span {
       .home-5 .app-screenshots-slider-area .screenshots-box, .home-5 .app-screenshots-slider-area .owl-item.active.center .item .screenshots-box {
           margin: 0;
       }
-      .home-5 .app-screenshots-slider-area .owl-item.active.center .item img,  .home-5 .app-screenshots-slider-area .owl-item .item img {
+      .home-5 .app-screenshots-slider-area .owl-item.active.center .item img, .home-5 .app-screenshots-slider-area .owl-item .item img {
           height: 435px;
+          width: auto;
+          padding: 3px 5px 1px 7px;
       }
 
 }
@@ -4033,7 +4081,7 @@ h5.small-heading span {
           margin-right: 0;
       }
       .home-2 .features-1-area {
-          padding: 57px 0 0;
+          padding: 57px 0;
       }
       .home-2 .single-features-1-box {
           margin: 25px 0 0;
@@ -4266,6 +4314,10 @@ h5.small-heading span {
     }
     .home-5 .app-screenshots-slider-area .section-title-area {
         width: 100%;
+    }
+    .home-2 .features-2-area .panel.panel-default {
+        margin-left: 0;
+        margin-right: 0;
     }
 
 }
